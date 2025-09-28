@@ -19,9 +19,6 @@ const navigation = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard, current: true },
   { name: "Customers", href: "/customers", icon: Users, current: false },
   { name: "Products", href: "/products", icon: Package, current: false },
-  { name: "Reports", href: "/reports", icon: FileText, current: false },
-  { name: "Analytics", href: "/dashboard", icon: BarChart3, current: false },
-  { name: "Data Upload", href: "/upload", icon: Upload, current: false },
   { name: "Settings", href: "/settings", icon: Settings, current: false },
 ];
 
