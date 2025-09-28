@@ -269,78 +269,7 @@ export default function CustomerProfile() {
               </CardContent>
             </Card>
 
-            {/* What-If Analysis */}
-            <Card>
-              <CardHeader>
-                <CardTitle>What-If Analysis</CardTitle>
-                <CardDescription>
-                  Adjust customer features to see impact on churn probability
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label>Tenure (months): {whatIfValues.tenure}</Label>
-                    <Slider
-                      value={[whatIfValues.tenure]}
-                      onValueChange={(value) => setWhatIfValues(prev => ({ ...prev, tenure: value[0] }))}
-                      max={36}
-                      min={1}
-                      step={1}
-                      className="w-full"
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label>Recency (days): {whatIfValues.recency}</Label>
-                    <Slider
-                      value={[whatIfValues.recency]}
-                      onValueChange={(value) => setWhatIfValues(prev => ({ ...prev, recency: value[0] }))}
-                      max={90}
-                      min={1}
-                      step={1}
-                      className="w-full"
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label>Purchase Frequency: {whatIfValues.frequency}</Label>
-                    <Slider
-                      value={[whatIfValues.frequency]}
-                      onValueChange={(value) => setWhatIfValues(prev => ({ ...prev, frequency: value[0] }))}
-                      max={50}
-                      min={1}
-                      step={1}
-                      className="w-full"
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label>Support Tickets: {whatIfValues.supportTickets}</Label>
-                    <Slider
-                      value={[whatIfValues.supportTickets]}
-                      onValueChange={(value) => setWhatIfValues(prev => ({ ...prev, supportTickets: value[0] }))}
-                      max={10}
-                      min={0}
-                      step={1}
-                      className="w-full"
-                    />
-                  </div>
-                </div>
-                
-                <div className="flex items-center justify-between pt-4 border-t">
-                  <div className="space-y-1">
-                    <div className="text-sm text-muted-foreground">Predicted Churn Probability</div>
-                    <div className="text-2xl font-bold text-foreground">
-                      {(predictedChurn * 100).toFixed(0)}%
-                    </div>
-                  </div>
-                  <Button onClick={calculateChurnProbability}>
-                    Recalculate Prediction
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            
           </div>
         </div>
       </div>
