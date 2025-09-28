@@ -10,14 +10,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 export function FilterPanel() {
   const [churnThreshold, setChurnThreshold] = useState([50]);
   const [dateRange, setDateRange] = useState('last-30-days');
-  const [segment, setSegment] = useState('all');
   const [region, setRegion] = useState('all');
   const [productCategory, setProductCategory] = useState('all');
 
   const handleReset = () => {
     setChurnThreshold([50]);
     setDateRange('last-30-days');
-    setSegment('all');
     setRegion('all');
     setProductCategory('all');
   };
@@ -56,24 +54,6 @@ export function FilterPanel() {
             </SelectContent>
           </Select>
         </div>
-
-        {/* Customer Segment */}
-        <div className="space-y-2">
-          <Label className="text-sm font-medium">Customer Segment</Label>
-          <Select value={segment} onValueChange={setSegment}>
-            <SelectTrigger>
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Segments</SelectItem>
-              <SelectItem value="premium">Premium</SelectItem>
-              <SelectItem value="standard">Standard</SelectItem>
-              <SelectItem value="basic">Basic</SelectItem>
-              <SelectItem value="enterprise">Enterprise</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
-
         {/* Product Category */}
         <div className="space-y-2">
           <Label className="text-sm font-medium">Product Category</Label>
