@@ -7,7 +7,6 @@ import {
   SalesForecastChart, 
   NPSTrendChart 
 } from '@/components/dashboard/ChartComponents';
-import { FilterPanel } from '@/components/dashboard/FilterPanel';
 
 export default function Dashboard() {
   return (
@@ -36,12 +35,7 @@ export default function Dashboard() {
             <NPSTrendChart />
           </div>
           
-          {/* Right Side - Filters */}
-          <div className="xl:col-span-1">
-            <div className="sticky top-6">
-              <FilterPanel />
-            </div>
-          </div>
+          
         </div>
       </div>
     </DashboardLayout>

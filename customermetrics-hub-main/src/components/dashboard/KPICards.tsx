@@ -1,4 +1,5 @@
 import { TrendingUp, TrendingDown, Users, AlertTriangle, Package, DollarSign } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 interface KPICardProps {
   title: string;
@@ -56,56 +57,109 @@ export function KPICard({ title, value, change, changeType, icon: Icon, descript
 }
 
 export function KPICards() {
-  const kpis = [
-    {
-      title: 'Total Customers',
-      value: '12,847',
-      change: '+5.2%',
-      changeType: 'positive' as const,
-      icon: Users,
-      description: 'vs last month'
-    },
-    {
-      title: 'Churn Rate',
-      value: '8.3%',
-      change: '-1.1%',
-      changeType: 'positive' as const,
-      icon: AlertTriangle,
-      description: 'vs last month'
-    },
-    {
-      title: 'Total Revenue',
-      value: '$2.4M',
-      change: '+12.5%',
-      changeType: 'positive' as const,
-      icon: DollarSign,
-      description: 'this quarter'
-    },
-    {
-      title: 'At-Risk Customers',
-      value: '1,067',
-      change: '+3.2%',
-      changeType: 'negative' as const,
-      icon: AlertTriangle,
-      description: 'high churn risk'
-    },
-    {
-      title: 'Top Products',
-      value: '247',
-      change: '+8.1%',
-      changeType: 'positive' as const,
-      icon: Package,
-      description: 'active products'
-    },
-    {
-      title: 'Avg. Customer Value',
-      value: '$187',
-      change: '+2.3%',
-      changeType: 'positive' as const,
-      icon: DollarSign,
-      description: 'per customer'
+  const [kpis, setKpis] = useState([]);
+
+  useEffect(() => {
+    const saved = localStorage.getItem('customers');
+    if (saved) {
+      const customers = JSON.parse(saved);
+      const totalCustomers = customers.length;
+      const highRisk = customers.filter(c => c.riskScore === 'High').length;
+      const churnRate = totalCustomers > 0 ? (highRisk / totalCustomers * 100).toFixed(1) : 0;
+      const totalRevenue = customers.reduce((sum, c) => sum + (c.totalSpent || 0), 0);
+      const avgValue = totalCustomers > 0 ? (totalRevenue / totalCustomers).toFixed(0) : 0;
+
+      // Mock changes for demo
+      const mockChange = () => (Math.random() - 0.5) * 10;
+
+      setKpis([
+        {
+          title: 'Total Customers',
+          value: totalCustomers.toLocaleString(),
+          change: `${mockChange().toFixed(1)}%`,
+          changeType: 'positive' as const,
+          icon: Users,
+          description: 'active customers'
+        },
+        {
+          title: 'Churn Rate',
+          value: `${churnRate}%`,
+          change: `${mockChange().toFixed(1)}%`,
+          changeType: highRisk < totalCustomers * 0.1 ? 'positive' : 'negative',
+          icon: AlertTriangle,
+          description: 'predicted churn'
+        },
+        {
+          title: 'Total Revenue',
+          value: `$${(totalRevenue / 1000000).toFixed(1)}M`,
+          change: `${mockChange().toFixed(1)}%`,
+          changeType: 'positive' as const,
+          icon: DollarSign,
+          description: 'lifetime value'
+        },
+        {
+          title: 'At-Risk Customers',
+          value: highRisk.toString(),
+          change: `${mockChange().toFixed(1)}%`,
+          changeType: 'negative' as const,
+          icon: AlertTriangle,
+          description: 'high risk'
+        },
+        {
+          title: 'Avg. Customer Value',
+          value: `$${avgValue}`,
+          change: `${mockChange().toFixed(1)}%`,
+          changeType: 'positive' as const,
+          icon: DollarSign,
+          description: 'per customer'
+        }
+      ]);
+    } else {
+      // Default values if no data
+      setKpis([
+        {
+          title: 'Total Customers',
+          value: '0',
+          change: '0%',
+          changeType: 'neutral' as const,
+          icon: Users,
+          description: 'no data'
+        },
+        {
+          title: 'Churn Rate',
+          value: '0%',
+          change: '0%',
+          changeType: 'neutral' as const,
+          icon: AlertTriangle,
+          description: 'no data'
+        },
+        {
+          title: 'Total Revenue',
+          value: '$0',
+          change: '0%',
+          changeType: 'neutral' as const,
+          icon: DollarSign,
+          description: 'no data'
+        },
+        {
+          title: 'At-Risk Customers',
+          value: '0',
+          change: '0%',
+          changeType: 'neutral' as const,
+          icon: AlertTriangle,
+          description: 'no data'
+        },
+        {
+          title: 'Avg. Customer Value',
+          value: '$0',
+          change: '0%',
+          changeType: 'neutral' as const,
+          icon: DollarSign,
+          description: 'no data'
+        }
+      ]);
     }
-  ];
+  }, []);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 mb-8">

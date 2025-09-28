@@ -1,4 +1,5 @@
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, Area, AreaChart } from 'recharts';
+import { useEffect, useState } from 'react';
 
 // Churn Distribution Data
 const churnDistributionData = [
@@ -60,16 +61,42 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 };
 
 export function ChurnDistributionChart() {
+  const [churnData, setChurnData] = useState([]);
+
+  useEffect(() => {
+    const saved = localStorage.getItem('customers');
+    if (saved) {
+      const customers = JSON.parse(saved);
+      const total = customers.length;
+      const high = customers.filter(c => c.riskScore === 'High').length;
+      const medium = customers.filter(c => c.riskScore === 'Medium').length;
+      const low = customers.filter(c => c.riskScore === 'Low').length;
+
+      const data = [
+        { name: 'Low Risk', value: total > 0 ? Math.round((low / total) * 100) : 0, count: low, color: '#10b981' },
+        { name: 'Medium Risk', value: total > 0 ? Math.round((medium / total) * 100) : 0, count: medium, color: '#f59e0b' },
+        { name: 'High Risk', value: total > 0 ? Math.round((high / total) * 100) : 0, count: high, color: '#ef4444' }
+      ];
+      setChurnData(data);
+    } else {
+      setChurnData([
+        { name: 'Low Risk', value: 0, count: 0, color: '#10b981' },
+        { name: 'Medium Risk', value: 0, count: 0, color: '#f59e0b' },
+        { name: 'High Risk', value: 0, count: 0, color: '#ef4444' }
+      ]);
+    }
+  }, []);
+
   return (
     <div className="chart-container">
       <h3 className="text-lg font-semibold text-foreground mb-2">Customer Risk Distribution</h3>
       <p className="text-sm text-muted-foreground mb-6">Breakdown of customers by churn risk level</p>
-      
+
       <div className="h-64">
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
             <Pie
-              data={churnDistributionData}
+              data={churnData}
               cx="50%"
               cy="50%"
               innerRadius={60}
@@ -77,11 +104,11 @@ export function ChurnDistributionChart() {
               paddingAngle={2}
               dataKey="value"
             >
-              {churnDistributionData.map((entry, index) => (
+              {churnData.map((entry, index) => (
                 <Cell key={`cell-${index}`} fill={entry.color} />
               ))}
             </Pie>
-            <Tooltip 
+            <Tooltip
               content={({ payload }) => {
                 if (payload && payload.length) {
                   const data = payload[0].payload;
@@ -99,13 +126,13 @@ export function ChurnDistributionChart() {
           </PieChart>
         </ResponsiveContainer>
       </div>
-      
+
       <div className="mt-4 grid grid-cols-3 gap-4 text-center">
-        {churnDistributionData.map((item, index) => (
+        {churnData.map((item, index) => (
           <div key={index} className="flex flex-col items-center">
             <div className="flex items-center space-x-2 mb-1">
-              <div 
-                className="w-3 h-3 rounded-full" 
+              <div
+                className="w-3 h-3 rounded-full"
                 style={{ backgroundColor: item.color }}
               />
               <span className="text-xs font-medium text-foreground">{item.name}</span>
@@ -120,18 +147,61 @@ export function ChurnDistributionChart() {
 }
 
 export function FeatureImportanceChart() {
+  const [featureData, setFeatureData] = useState([]);
+
+  useEffect(() => {
+    const saved = localStorage.getItem('customers');
+    if (saved) {
+      const customers = JSON.parse(saved);
+      const total = customers.length;
+      if (total > 0) {
+        // Calculate churn rate by region
+        const regions: Record<string, {total: number, churn: number}> = {};
+        customers.forEach(c => {
+          const region = c.region;
+          if (!regions[region]) regions[region] = { total: 0, churn: 0 };
+          regions[region].total++;
+          if (c.riskScore === 'High') regions[region].churn++;
+        });
+
+        const regionData = Object.entries(regions).map(([region, data]) => ({
+          feature: region,
+          importance: data.churn,
+          description: `${data.churn} high risk customers`
+        })).sort((a, b) => b.importance - a.importance).slice(0, 6);
+
+        setFeatureData(regionData);
+      }
+    } else {
+      setFeatureData([
+        { feature: 'No Data', importance: 0, description: 'Upload customer data' }
+      ]);
+    }
+  }, []);
+
   return (
     <div className="chart-container">
-      <h3 className="text-lg font-semibold text-foreground mb-2">Churn Prediction Features</h3>
-      <p className="text-sm text-muted-foreground mb-6">Most important factors in predicting customer churn</p>
-      
+      <h3 className="text-lg font-semibold text-foreground mb-2">High Risk Customers by Region</h3>
+      <p className="text-sm text-muted-foreground mb-6">Number of high-risk customers across regions</p>
+
       <div className="h-64">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={featureImportanceData} layout="horizontal" margin={{ left: 80 }}>
+          <BarChart data={featureData} layout="horizontal" margin={{ left: 80 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-            <XAxis type="number" domain={[0, 0.3]} tickFormatter={(value) => `${(value * 100).toFixed(0)}%`} />
+            <XAxis type="number" domain={[0, 10]} tickFormatter={(value) => value.toString()} />
             <YAxis type="category" dataKey="feature" width={80} />
-            <Tooltip content={CustomTooltip} />
+            <Tooltip content={({ payload }) => {
+              if (payload && payload.length) {
+                const data = payload[0].payload;
+                return (
+                  <div className="bg-popover border border-border rounded-lg p-3 shadow-lg">
+                    <p className="text-sm font-medium text-popover-foreground">{data.feature}</p>
+                    <p className="text-sm text-muted-foreground">{data.description}</p>
+                  </div>
+                );
+              }
+              return null;
+            }} />
             <Bar dataKey="importance" fill="hsl(var(--primary))" radius={[0, 4, 4, 0]} />
           </BarChart>
         </ResponsiveContainer>
@@ -141,18 +211,38 @@ export function FeatureImportanceChart() {
 }
 
 export function SalesForecastChart() {
+  const [forecastData, setForecastData] = useState([]);
+
+  useEffect(() => {
+    const saved = localStorage.getItem('forecasts');
+    if (saved) {
+      const forecasts = JSON.parse(saved);
+      // Transform to chart format, perhaps show predicted sales over time
+      const data = forecasts.map((f, index) => ({
+        month: `Period ${index + 1}`,
+        predicted: f.predicted_sales || 0,
+        historical: null // Since we don't have historical, show only predicted
+      }));
+      setForecastData(data);
+    } else {
+      setForecastData([
+        { month: 'No Data', predicted: 0, historical: null }
+      ]);
+    }
+  }, []);
+
   return (
     <div className="chart-container">
       <h3 className="text-lg font-semibold text-foreground mb-2">Sales Forecast</h3>
-      <p className="text-sm text-muted-foreground mb-6">Historical performance vs predicted sales</p>
-      
+      <p className="text-sm text-muted-foreground mb-6">Predicted sales from uploaded data</p>
+
       <div className="h-64">
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={salesForecastData}>
+          <AreaChart data={forecastData}>
             <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
             <XAxis dataKey="month" />
-            <YAxis tickFormatter={(value) => `$${(value / 1000000).toFixed(1)}M`} />
-            <Tooltip 
+            <YAxis tickFormatter={(value) => `$${(value / 1000).toFixed(0)}K`} />
+            <Tooltip
               content={({ payload, label }) => {
                 if (payload && payload.length) {
                   return (
@@ -160,8 +250,7 @@ export function SalesForecastChart() {
                       <p className="text-sm font-medium text-popover-foreground mb-1">{label}</p>
                       {payload.map((entry: any, index: number) => (
                         <p key={index} className="text-sm" style={{ color: entry.color }}>
-                          {entry.name === 'historical' ? 'Historical' : 'Predicted'}: 
-                          ${(entry.value / 1000000).toFixed(1)}M
+                          Predicted: ${entry.value.toLocaleString()}
                         </p>
                       ))}
                     </div>
@@ -170,32 +259,19 @@ export function SalesForecastChart() {
                 return null;
               }}
             />
-            <Area 
-              type="monotone" 
-              dataKey="historical" 
-              stackId="1" 
-              stroke="hsl(var(--primary))" 
-              fill="hsl(var(--primary))" 
-              fillOpacity={0.6}
-            />
-            <Area 
-              type="monotone" 
-              dataKey="predicted" 
-              stackId="2" 
-              stroke="hsl(var(--success))" 
-              fill="hsl(var(--success))" 
+            <Area
+              type="monotone"
+              dataKey="predicted"
+              stroke="hsl(var(--success))"
+              fill="hsl(var(--success))"
               fillOpacity={0.6}
               strokeDasharray="5 5"
             />
           </AreaChart>
         </ResponsiveContainer>
       </div>
-      
+
       <div className="mt-4 flex justify-center space-x-6">
-        <div className="flex items-center space-x-2">
-          <div className="w-3 h-3 bg-primary rounded-full" />
-          <span className="text-xs text-muted-foreground">Historical Sales</span>
-        </div>
         <div className="flex items-center space-x-2">
           <div className="w-3 h-3 bg-success rounded-full" />
           <span className="text-xs text-muted-foreground">Predicted Sales</span>
