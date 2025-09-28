@@ -1,0 +1,1 @@
+["order_id", "customer_id", "age", "gender", "product_id", "country", "signup_date", "last_purchase_date", "cancellations_count", "subscription_status", "unit_price", "quantity", "purchase_frequency", "product_name", "category", "Ratings", "churn_reason", "churn_risk_score"]

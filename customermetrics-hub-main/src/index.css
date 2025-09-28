@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Dashboard Design System - Customer Analytics Theme */
+
+@layer base {
+  :root {
+    /* Light Theme - Core Background & Text */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    /* Card System */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --card-elevated: 0 0% 98%;
+
+    /* Interactive Elements */
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    /* Brand Colors - Modern Blue Gradient */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 217 91% 70%;
+    --primary-dark: 217 91% 45%;
+
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    --success-glow: 142 76% 50%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 10%;
+    --warning-glow: 38 92% 60%;
+
+    --danger: 0 84% 60%;
+    --danger-foreground: 0 0% 98%;
+    --danger-glow: 0 84% 70%;
+
+    /* Neutral System */
+    --secondary: 240 4% 96%;
+    --secondary-foreground: 240 6% 10%;
+
+    --muted: 240 4% 96%;
+    --muted-foreground: 240 5% 45%;
+
+    --accent: 240 4% 96%;
+    --accent-foreground: 240 6% 10%;
+
+    /* Borders & Inputs */
+    --border: 240 5% 90%;
+    --input: 240 5% 90%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.5rem;
+
+    /* Dashboard Specific Tokens */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5% 15%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4% 96%;
+    --sidebar-accent-foreground: 240 5% 15%;
+    --sidebar-border: 240 5% 90%;
+    --sidebar-ring: 217 91% 60%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(217 91% 60%),
+      hsl(217 91% 70%)
+    );
+    --gradient-success: linear-gradient(
+      135deg,
+      hsl(142 76% 36%),
+      hsl(142 76% 50%)
+    );
+    --gradient-warning: linear-gradient(
+      135deg,
+      hsl(38 92% 50%),
+      hsl(38 92% 60%)
+    );
+    --gradient-danger: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 70%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(0 0% 98%));
+
+    /* Shadows */
+    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.1);
+    --shadow-elevated: 0 8px 30px -6px hsl(0 0% 0% / 0.15);
+    --shadow-glow: 0 0 30px hsl(217 91% 60% / 0.2);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    /* Dark Theme - Core Background & Text */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    /* Card System */
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --card-elevated: 240 8% 6%;
+
+    /* Interactive Elements */
+    --popover: 240 8% 6%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Brand Colors - Modern Blue Gradient */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 217 91% 70%;
+    --primary-dark: 217 91% 45%;
+
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    --success-glow: 142 76% 50%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 10%;
+    --warning-glow: 38 92% 60%;
+
+    --danger: 0 84% 60%;
+    --danger-foreground: 0 0% 98%;
+    --danger-glow: 0 84% 70%;
+
+    /* Neutral System */
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 240 6% 90%;
+
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 64%;
+
+    --accent: 240 4% 16%;
+    --accent-foreground: 240 6% 90%;
+
+    /* Borders & Inputs */
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.5rem;
+
+    /* Dashboard Specific Tokens */
+    --sidebar-background: 240 8% 6%;
+    --sidebar-foreground: 240 6% 90%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4% 16%;
+    --sidebar-accent-foreground: 240 6% 90%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: 217 91% 60%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(217 91% 60%),
+      hsl(217 91% 70%)
+    );
+    --gradient-success: linear-gradient(
+      135deg,
+      hsl(142 76% 36%),
+      hsl(142 76% 50%)
+    );
+    --gradient-warning: linear-gradient(
+      135deg,
+      hsl(38 92% 50%),
+      hsl(38 92% 60%)
+    );
+    --gradient-danger: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 70%));
+    --gradient-card: linear-gradient(145deg, hsl(240 8% 6%), hsl(240 10% 3.9%));
+
+    /* Shadows */
+    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.25);
+    --shadow-elevated: 0 8px 30px -6px hsl(0 0% 0% / 0.35);
+    --shadow-glow: 0 0 30px hsl(217 91% 60% / 0.2);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+/* Custom Dashboard Utilities */
+@layer components {
+  .dashboard-card {
+    @apply bg-card border border-border rounded-lg shadow-[var(--shadow-card)] backdrop-blur-sm;
+  }
+
+  .dashboard-card-elevated {
+    @apply bg-card border border-border rounded-lg shadow-[var(--shadow-elevated)] backdrop-blur-sm;
+    background: var(--gradient-card);
+  }
+
+  .kpi-card {
+    @apply dashboard-card p-6 hover:scale-[1.02] transition-transform duration-300;
+  }
+
+  .chart-container {
+    @apply dashboard-card p-6 min-h-[300px] flex flex-col;
+  }
+
+  .metric-positive {
+    @apply text-success-foreground bg-success/10 border border-success/20;
+  }
+
+  .metric-warning {
+    @apply text-warning-foreground bg-warning/10 border border-warning/20;
+  }
+
+  .metric-negative {
+    @apply text-danger-foreground bg-danger/10 border border-danger/20;
+  }
+
+  .nav-item-active {
+    @apply bg-sidebar-accent text-sidebar-accent-foreground border-l-2 border-sidebar-primary;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

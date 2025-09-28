@@ -1,0 +1,500 @@
+order_id,customer_id,age,gender,product_id,country,signup_date,last_purchase_date,cancellations_count,subscription_status,unit_price,quantity,purchase_frequency,product_name,category,Ratings,is_churn,churn_reason,churn_risk_score
+ORD5000,CUST1000,39,Female,PROD200,Canada,2021-07-01 00:00:00,2/21/2023,0,active,78.21,5,37,Football,Sports,4.2,0,Active,0
+ORD5001,CUST1001,61,Female,PROD201,USA,10/19/2020,2021-08-12 00:00:00,0,active,64.02,8,35,Refrigerator,Home,4.0,0,Active,0
+ORD5002,CUST1002,26,Female,PROD202,Pakistan,2023-10-06 00:00:00,2023-04-09 00:00:00,3,cancelled,604.14,2,44,Hoodie,Clothing,3.9,1,Too many cancellations,60
+ORD5003,CUST1003,54,Male,PROD203,India,7/30/2023,2/20/2024,4,paused,84.66,4,1,Conditioner,Beauty,4.2,1,Paused subscription,90
+ORD5004,CUST1004,50,Male,PROD204,India,2020-09-12 00:00:00,9/14/2024,0,active,62.66,7,35,Smartwatch,Electronics,4.2,0,Active,0
+ORD5005,CUST1005,46,Male,PROD205,Pakistan,5/16/2023,8/13/2025,2,active,221.61,8,16,Hoodie,Clothing,3.9,0,Active,20
+ORD5006,CUST1006,29,Female,PROD206,Germany,2023-10-04 00:00:00,7/15/2025,1,active,175.74,4,7,Tablet,Electronics,4.1,0,Active,10
+ORD5007,CUST1007,24,Female,PROD207,UK,2022-11-07 00:00:00,12/31/2024,2,active,9.56,5,34,Jacket,Clothing,4.3,0,Active,20
+ORD5008,CUST1008,53,Female,PROD208,Pakistan,4/25/2021,12/26/2024,4,paused,1525.8,1,32,Nail Polish,Beauty,4.2,1,Paused subscription,70
+ORD5009,CUST1009,38,Male,PROD209,Germany,2021-09-12 00:00:00,11/29/2024,2,active,337.24,4,6,Camera,Electronics,4.0,0,Active,20
+ORD5010,CUST1010,41,Female,PROD210,UK,2020-04-10 00:00:00,2022-02-08 00:00:00,2,active,203.05,6,38,Dumbbells,Sports,4.3,0,Active,20
+ORD5011,CUST1011,24,Female,PROD211,Canada,2022-12-02 00:00:00,2025-12-03 00:00:00,1,active,940.17,1,24,Headphones,Electronics,4.2,0,Active,10
+ORD5012,CUST1012,39,Female,PROD212,Canada,12/20/2020,1/16/2023,2,active,168.79,9,36,Vacuum Cleaner,Home,4.4,0,Active,20
+ORD5013,CUST1013,61,Female,PROD213,USA,2/19/2021,2024-09-12 00:00:00,3,active,236.77,8,5,Perfume,Beauty,4.2,0,Active,30
+ORD5014,CUST1014,64,Female,PROD214,UK,2/27/2021,4/24/2025,1,active,130.32,6,20,Cycling Helmet,Sports,4.1,0,Active,10
+ORD5015,CUST1015,28,Female,PROD215,UK,12/31/2021,11/15/2023,5,cancelled,333.99,3,27,Face Wash,Beauty,4.4,1,Too many cancellations,80
+ORD5016,CUST1016,34,Female,PROD216,USA,2021-06-07 00:00:00,2025-02-08 00:00:00,1,active,1875.08,1,31,Football,Sports,4.2,0,Active,10
+ORD5017,CUST1017,22,Male,PROD217,Pakistan,9/14/2021,2024-04-08 00:00:00,0,cancelled,211.24,6,18,Cricket Bat,Sports,4.0,1,Cancelled subscription,30
+ORD5018,CUST1018,42,Male,PROD218,USA,5/25/2023,2025-09-01 00:00:00,5,paused,1702.39,1,14,Sneakers,Clothing,4.1,1,Paused subscription,80
+ORD5019,CUST1019,51,Female,PROD219,India,9/14/2022,8/13/2025,0,paused,199.58,8,41,Refrigerator,Home,4.3,1,Paused subscription,30
+ORD5020,CUST1020,64,Female,PROD220,Canada,3/13/2022,1/23/2024,4,active,242.03,6,2,Cricket Bat,Sports,4.5,0,Active,60
+ORD5021,CUST1021,52,Male,PROD221,Germany,2021-02-02 00:00:00,6/20/2022,1,paused,50.78,7,9,Dress,Clothing,3.7,1,Paused subscription,40
+ORD5022,CUST1022,28,Female,PROD222,Germany,2022-09-06 00:00:00,2022-05-08 00:00:00,2,active,89.87,6,39,Smartphone,Electronics,4.3,0,Active,20
+ORD5023,CUST1023,25,Male,PROD223,Germany,2021-04-05 00:00:00,2025-11-06 00:00:00,5,active,52.34,8,16,Camera,Electronics,4.0,0,Active,50
+ORD5024,CUST1024,45,Male,PROD224,Germany,4/14/2022,1/29/2023,2,active,232.67,3,20,Lipstick,Beauty,4.3,0,Active,20
+ORD5025,CUST1025,49,Male,PROD225,India,2021-07-11 00:00:00,2022-09-06 00:00:00,3,cancelled,142.89,5,40,Sneakers,Clothing,4.2,1,Too many cancellations,60
+ORD5026,CUST1026,27,Male,PROD226,Germany,5/15/2023,2025-05-05 00:00:00,0,paused,44.69,7,28,T-Shirt,Clothing,4.2,1,Paused subscription,30
+ORD5027,CUST1027,69,Male,PROD227,Pakistan,3/23/2021,2/25/2022,4,cancelled,139.3,7,42,Tennis Racket,Sports,4.0,1,Too many cancellations,70
+ORD5028,CUST1028,66,Male,PROD228,India,2021-02-06 00:00:00,2025-03-04 00:00:00,1,active,149.65,8,45,Sofa,Home,4.4,0,Active,10
+ORD5029,CUST1029,43,Female,PROD229,Canada,8/22/2020,3/22/2024,3,cancelled,157.1,6,14,Laptop,Electronics,4.3,1,Too many cancellations,60
+ORD5030,CUST1030,18,Male,PROD230,Germany,4/19/2021,2021-01-06 00:00:00,5,active,182.53,9,24,Basketball,Sports,4.5,0,Active,50
+ORD5031,CUST1031,37,Male,PROD231,Canada,8/19/2021,7/22/2023,4,paused,31.95,1,9,Dress,Clothing,4.0,1,Paused subscription,70
+ORD5032,CUST1032,52,Female,PROD232,Germany,2021-09-02 00:00:00,7/27/2021,0,cancelled,804.77,2,26,Cycling Helmet,Sports,4.3,1,Cancelled subscription,30
+ORD5033,CUST1033,50,Male,PROD233,Canada,3/25/2022,9/25/2022,5,active,332.38,5,29,Shirt,Clothing,4.3,0,Active,50
+ORD5034,CUST1034,49,Female,PROD234,UK,2/26/2021,4/22/2025,5,active,1292.65,1,12,Cricket Bat,Sports,3.9,0,Active,50
+ORD5035,CUST1035,48,Female,PROD235,India,2021-11-07 00:00:00,11/23/2023,3,active,36.39,7,24,Tablet,Electronics,3.9,0,Active,30
+ORD5036,CUST1036,42,Male,PROD236,UK,2023-03-08 00:00:00,1/14/2024,0,paused,79.19,7,13,Camera,Electronics,4.4,1,Paused subscription,30
+ORD5037,CUST1037,66,Male,PROD237,India,3/25/2023,5/16/2023,3,active,94.06,4,48,Blender,Home,4.0,0,Active,30
+ORD5038,CUST1038,25,Female,PROD238,Pakistan,2/17/2022,6/29/2023,3,paused,786.48,2,11,Basketball,Sports,4.2,1,Paused subscription,60
+ORD5039,CUST1039,40,Female,PROD239,India,2022-04-12 00:00:00,12/13/2024,5,active,20.55,6,47,Sneakers,Clothing,4.2,0,Active,50
+ORD5040,CUST1040,31,Male,PROD240,USA,2023-08-05 00:00:00,2025-06-08 00:00:00,3,active,203.23,5,45,Sneakers,Clothing,4.5,0,Active,30
+ORD5041,CUST1041,55,Female,PROD241,Pakistan,7/19/2022,3/28/2025,5,active,65.07,7,5,Dumbbells,Sports,4.3,0,Active,50
+ORD5042,CUST1042,57,Other,PROD242,Germany,5/23/2023,3/15/2025,4,paused,1954.64,1,36,Cricket Bat,Sports,4.2,1,Paused subscription,70
+ORD5043,CUST1043,55,Female,PROD243,UK,4/22/2023,5/28/2024,4,active,18.98,7,45,Smartphone,Electronics,4.3,0,Active,40
+ORD5044,CUST1044,47,Male,PROD244,Germany,2022-11-03 00:00:00,2023-11-12 00:00:00,5,cancelled,654.56,3,48,Football,Sports,4.0,1,Too many cancellations,80
+ORD5045,CUST1045,29,Male,PROD245,Pakistan,11/30/2020,5/22/2022,0,active,334.17,5,6,Headphones,Electronics,3.3,0,Active,0
+ORD5046,CUST1046,19,Female,PROD246,Pakistan,3/21/2023,1/14/2025,0,active,219.75,5,37,Jacket,Clothing,4.1,0,Active,0
+ORD5047,CUST1047,38,Male,PROD247,Canada,7/13/2021,2022-09-07 00:00:00,1,active,223.05,7,23,Lamp,Home,4.4,0,Active,10
+ORD5048,CUST1048,48,Male,PROD248,Pakistan,2023-10-04 00:00:00,4/18/2025,5,paused,149.88,4,35,Headphones,Electronics,3.6,1,Paused subscription,80
+ORD5049,CUST1049,58,Male,PROD249,Germany,6/17/2022,2025-04-01 00:00:00,4,active,165.27,9,30,Bluetooth Speaker,Electronics,4.2,0,Active,40
+ORD5050,CUST1050,27,Female,PROD250,Pakistan,8/29/2020,8/15/2024,0,paused,222.62,8,37,Gaming Console,Electronics,4.4,1,Paused subscription,30
+ORD5051,CUST1051,54,Male,PROD251,Canada,2022-05-12 00:00:00,7/13/2023,2,active,45.17,2,14,Bluetooth Speaker,Electronics,4.2,0,Active,20
+ORD5052,CUST1052,67,Female,PROD252,USA,2020-09-09 00:00:00,5/28/2025,3,active,136.95,8,4,Basketball,Sports,4.3,0,Active,50
+ORD5053,CUST1053,51,Female,PROD253,Canada,2020-05-10 00:00:00,8/16/2021,4,cancelled,323.04,3,8,Nail Polish,Beauty,4.2,1,Too many cancellations,70
+ORD5054,CUST1054,59,Male,PROD254,UK,2023-03-05 00:00:00,4/26/2024,0,cancelled,104.0,3,1,Smartphone,Electronics,4.1,1,Cancelled subscription,50
+ORD5055,CUST1055,42,Female,PROD255,USA,2022-09-04 00:00:00,2022-04-08 00:00:00,4,cancelled,251.6,3,23,Lamp,Home,3.7,1,Too many cancellations,70
+ORD5056,CUST1056,38,Male,PROD256,USA,8/15/2023,12/28/2023,0,active,472.04,2,17,Shirt,Clothing,4.2,0,Active,0
+ORD5057,CUST1057,23,Female,PROD257,Germany,2/27/2023,2025-11-02 00:00:00,5,active,21.85,8,1,Tennis Racket,Sports,4.2,0,Active,70
+ORD5058,CUST1058,18,Male,PROD258,USA,4/22/2021,5/18/2023,3,active,295.22,5,18,Jeans,Clothing,4.2,0,Active,30
+ORD5059,CUST1059,41,Female,PROD259,Canada,8/30/2020,2023-02-09 00:00:00,0,paused,362.26,5,13,Running Shoes,Sports,4.3,1,Paused subscription,30
+ORD5060,CUST1060,35,Female,PROD260,Canada,8/16/2021,9/21/2021,1,cancelled,286.73,6,42,Cycling Helmet,Sports,3.7,1,Cancelled subscription,40
+ORD5061,CUST1061,39,Female,PROD261,Canada,12/29/2021,2024-10-01 00:00:00,3,active,34.68,9,2,Smartphone,Electronics,4.3,0,Active,50
+ORD5062,CUST1062,33,Female,PROD262,UK,2021-09-09 00:00:00,2024-02-02 00:00:00,4,paused,370.97,4,13,Sneakers,Clothing,4.0,1,Paused subscription,70
+ORD5063,CUST1063,34,Female,PROD263,Canada,11/26/2020,2022-10-03 00:00:00,4,active,841.95,2,9,Camera,Electronics,4.2,0,Active,40
+ORD5064,CUST1064,22,Female,PROD264,Germany,2022-08-07 00:00:00,2023-03-02 00:00:00,4,cancelled,1795.65,1,16,Sofa,Home,4.2,1,Too many cancellations,70
+ORD5065,CUST1065,56,Male,PROD265,Pakistan,11/16/2020,2025-12-06 00:00:00,1,paused,459.56,3,7,Smartwatch,Electronics,4.4,1,Paused subscription,40
+ORD5066,CUST1066,54,Female,PROD266,Pakistan,7/13/2023,2024-10-04 00:00:00,3,cancelled,193.86,5,9,Hoodie,Clothing,4.1,1,Too many cancellations,60
+ORD5067,CUST1067,66,Female,PROD267,UK,9/24/2021,10/30/2024,4,active,180.63,3,39,Cycling Helmet,Sports,4.3,0,Active,40
+ORD5068,CUST1068,45,Other,PROD268,Canada,5/27/2023,2024-11-09 00:00:00,5,active,1217.67,1,40,Lipstick,Beauty,4.2,0,Active,50
+ORD5069,CUST1069,19,Male,PROD269,Canada,1/25/2022,6/29/2025,4,active,262.1,6,33,Smartwatch,Electronics,4.3,0,Active,40
+ORD5070,CUST1070,33,Female,PROD270,India,7/29/2023,12/18/2024,3,active,466.13,3,25,Jeans,Clothing,4.5,0,Active,30
+ORD5071,CUST1071,62,Female,PROD271,India,2021-09-10 00:00:00,2024-01-03 00:00:00,2,active,365.16,3,13,Laptop,Electronics,4.1,0,Active,20
+ORD5072,CUST1072,34,Male,PROD272,Canada,12/14/2020,2021-01-04 00:00:00,3,active,24.08,5,28,Bluetooth Speaker,Electronics,4.2,0,Active,30
+ORD5073,CUST1073,57,Male,PROD273,Pakistan,2021-01-11 00:00:00,10/20/2022,0,cancelled,167.47,5,13,Sofa,Home,4.0,1,Cancelled subscription,30
+ORD5074,CUST1074,21,Female,PROD274,India,8/19/2021,5/21/2025,2,active,44.36,6,27,Bluetooth Speaker,Electronics,4.1,0,Active,20
+ORD5075,CUST1075,43,Female,PROD275,USA,8/20/2022,2/20/2024,1,cancelled,157.7,5,32,Dumbbells,Sports,4.1,1,Cancelled subscription,40
+ORD5076,CUST1076,63,Male,PROD276,USA,2021-03-05 00:00:00,2022-06-08 00:00:00,5,cancelled,244.5,6,19,Blender,Home,4.0,1,Too many cancellations,80
+ORD5077,CUST1077,35,Female,PROD277,UK,7/17/2021,2024-08-12 00:00:00,2,cancelled,1519.11,1,47,Tablet,Electronics,4.1,1,Cancelled subscription,50
+ORD5078,CUST1078,55,Female,PROD278,UK,2021-11-04 00:00:00,12/29/2023,2,cancelled,160.26,8,44,Face Wash,Beauty,3.9,1,Cancelled subscription,50
+ORD5079,CUST1079,54,Male,PROD279,Germany,2020-05-10 00:00:00,5/21/2025,5,active,154.0,7,21,Foundation,Beauty,4.0,0,Active,50
+ORD5080,CUST1080,53,Male,PROD280,Germany,2021-02-11 00:00:00,2023-10-10 00:00:00,0,active,119.16,7,4,Perfume,Beauty,4.2,0,Active,20
+ORD5081,CUST1081,20,Male,PROD281,USA,2023-01-07 00:00:00,12/18/2023,5,active,68.21,5,8,Refrigerator,Home,4.0,0,Active,50
+ORD5082,CUST1082,18,Male,PROD282,UK,9/23/2021,2/20/2022,0,active,112.63,7,20,Headphones,Electronics,3.4,0,Active,0
+ORD5083,CUST1083,44,Female,PROD283,UK,2021-03-10 00:00:00,2023-08-11 00:00:00,0,active,269.36,6,16,Basketball,Sports,4.4,0,Active,0
+ORD5084,CUST1084,20,Male,PROD284,Pakistan,2021-02-12 00:00:00,4/26/2025,0,active,1032.49,1,1,Dress,Clothing,4.2,0,Active,20
+ORD5085,CUST1085,51,Female,PROD285,Germany,2021-04-04 00:00:00,11/27/2023,0,active,253.07,2,7,Tablet,Electronics,4.2,0,Active,0
+ORD5086,CUST1086,55,Female,PROD286,Germany,1/15/2021,6/21/2024,1,active,189.41,8,3,Laptop,Electronics,4.3,0,Active,30
+ORD5087,CUST1087,52,Female,PROD287,Pakistan,2022-05-04 00:00:00,6/20/2023,1,cancelled,1495.51,1,45,Refrigerator,Home,4.3,1,Cancelled subscription,40
+ORD5088,CUST1088,31,Female,PROD288,Germany,10/16/2021,2022-08-11 00:00:00,4,cancelled,384.7,2,38,Gaming Console,Electronics,4.5,1,Too many cancellations,70
+ORD5089,CUST1089,46,Male,PROD289,India,8/28/2021,2023-07-09 00:00:00,5,active,256.4,6,29,Sofa,Home,4.2,0,Active,50
+ORD5090,CUST1090,61,Female,PROD290,Pakistan,2023-07-07 00:00:00,2023-08-08 00:00:00,0,active,289.7,4,14,Chair,Home,3.6,0,Active,0
+ORD5091,CUST1091,30,Female,PROD291,Canada,2/27/2021,6/26/2023,2,active,27.0,5,8,Dining Table,Home,4.2,0,Active,20
+ORD5092,CUST1092,56,Female,PROD292,Canada,9/13/2021,5/22/2022,2,active,279.83,3,28,Moisturizer,Beauty,4.2,0,Active,20
+ORD5093,CUST1093,24,Male,PROD293,Canada,5/29/2023,6/28/2024,0,paused,290.29,5,30,Headphones,Electronics,4.1,1,Paused subscription,30
+ORD5094,CUST1094,68,Female,PROD294,Pakistan,7/14/2022,12/25/2024,2,active,259.26,6,38,Yoga Mat,Sports,4.2,0,Active,20
+ORD5095,CUST1095,52,Male,PROD295,Canada,10/20/2022,2024-11-11 00:00:00,5,cancelled,159.25,5,40,Gaming Console,Electronics,3.7,1,Too many cancellations,80
+ORD5096,CUST1096,43,Female,PROD296,USA,2/15/2021,10/19/2021,0,active,62.41,3,30,Tennis Racket,Sports,3.8,0,Active,0
+ORD5097,CUST1097,35,Male,PROD297,Pakistan,3/31/2021,11/21/2022,4,active,107.73,5,26,Smartwatch,Electronics,3.7,0,Active,40
+ORD5098,CUST1098,66,Male,PROD298,Germany,9/15/2021,2022-07-08 00:00:00,5,paused,556.57,2,40,T-Shirt,Clothing,4.5,1,Paused subscription,80
+ORD5099,CUST1099,32,Female,PROD299,UK,9/18/2021,4/15/2022,2,active,990.57,1,5,Headphones,Electronics,4.1,0,Active,20
+ORD5100,CUST1100,57,Female,PROD300,UK,11/28/2020,1/20/2024,2,cancelled,140.71,6,26,Nail Polish,Beauty,4.3,1,Cancelled subscription,50
+ORD5101,CUST1101,49,Male,PROD301,USA,4/15/2022,9/20/2024,2,active,38.59,9,48,Yoga Mat,Sports,4.3,0,Active,20
+ORD5102,CUST1102,62,Female,PROD302,USA,8/14/2023,2024-08-07 00:00:00,1,active,196.79,8,35,Moisturizer,Beauty,4.0,0,Active,10
+ORD5103,CUST1103,36,Female,PROD303,Germany,6/18/2023,2025-06-04 00:00:00,4,active,84.34,5,41,Basketball,Sports,4.2,0,Active,40
+ORD5104,CUST1104,51,Male,PROD304,USA,7/27/2022,10/17/2023,2,paused,760.96,1,13,Foundation,Beauty,4.2,1,Paused subscription,50
+ORD5105,CUST1105,54,Female,PROD305,India,2022-01-10 00:00:00,2024-10-11 00:00:00,4,active,716.3,2,24,Smartphone,Electronics,4.3,0,Active,40
+ORD5106,CUST1106,27,Female,PROD306,UK,9/15/2022,2/21/2025,0,cancelled,396.36,5,34,Chair,Home,4.2,1,Cancelled subscription,30
+ORD5107,CUST1107,42,Female,PROD307,Germany,10/16/2020,2022-08-03 00:00:00,0,active,805.84,2,39,Cycling Helmet,Sports,4.3,0,Active,0
+ORD5108,CUST1108,51,Other,PROD308,India,2022-04-07 00:00:00,2024-11-11 00:00:00,3,cancelled,107.67,4,26,Vacuum Cleaner,Home,4.3,1,Too many cancellations,60
+ORD5109,CUST1109,39,Male,PROD309,India,2022-06-11 00:00:00,2024-05-04 00:00:00,1,cancelled,233.34,6,44,Perfume,Beauty,3.9,1,Cancelled subscription,40
+ORD5110,CUST1110,23,Female,PROD310,Canada,10/29/2022,8/21/2023,1,active,353.8,3,11,Perfume,Beauty,4.1,0,Active,10
+ORD5111,CUST1111,59,Female,PROD311,India,1/27/2023,12/26/2023,0,paused,221.28,8,41,Jeans,Clothing,4.3,1,Paused subscription,30
+ORD5112,CUST1112,29,Female,PROD312,Canada,2/13/2021,2023-05-10 00:00:00,4,paused,247.78,8,28,Lipstick,Beauty,4.3,1,Paused subscription,70
+ORD5113,CUST1113,50,Male,PROD313,India,2023-11-08 00:00:00,2025-07-03 00:00:00,0,cancelled,1810.76,1,13,Yoga Mat,Sports,4.1,1,Cancelled subscription,30
+ORD5114,CUST1114,31,Female,PROD314,Pakistan,12/16/2021,5/27/2023,3,active,164.62,6,15,Sofa,Home,4.5,0,Active,30
+ORD5115,CUST1115,65,Female,PROD315,Canada,7/26/2022,2022-01-10 00:00:00,3,active,57.48,5,42,Tablet,Electronics,4.1,0,Active,30
+ORD5116,CUST1116,28,Female,PROD316,Canada,11/29/2022,9/28/2024,0,active,431.26,3,3,Vacuum Cleaner,Home,3.6,0,Active,20
+ORD5117,CUST1117,31,Male,PROD317,Germany,12/30/2020,2021-09-06 00:00:00,0,cancelled,205.69,8,7,Dress,Clothing,3.5,1,Cancelled subscription,30
+ORD5118,CUST1118,45,Male,PROD318,Canada,2022-01-03 00:00:00,9/17/2024,1,active,338.72,1,22,Hoodie,Clothing,4.0,0,Active,10
+ORD5119,CUST1119,19,Female,PROD319,USA,2021-12-09 00:00:00,6/28/2024,1,active,174.49,9,25,Lipstick,Beauty,3.8,0,Active,10
+ORD5120,CUST1120,64,Male,PROD320,Pakistan,11/16/2020,2022-06-08 00:00:00,5,cancelled,102.01,6,1,Tablet,Electronics,4.4,1,Too many cancellations,100
+ORD5121,CUST1121,23,Male,PROD321,UK,10/30/2022,4/27/2024,5,active,389.99,5,3,Shirt,Clothing,3.7,0,Active,70
+ORD5122,CUST1122,22,Male,PROD322,UK,2022-03-12 00:00:00,12/19/2024,2,cancelled,21.57,6,49,Face Wash,Beauty,4.3,1,Cancelled subscription,50
+ORD5123,CUST1123,68,Male,PROD323,USA,4/25/2023,9/24/2024,1,cancelled,649.18,2,38,Gaming Console,Electronics,4.1,1,Cancelled subscription,40
+ORD5124,CUST1124,61,Female,PROD324,Canada,2/19/2023,4/23/2025,3,cancelled,964.88,2,5,Running Shoes,Sports,4.2,1,Too many cancellations,60
+ORD5125,CUST1125,52,Male,PROD325,UK,5/20/2023,2024-08-02 00:00:00,0,active,201.06,8,28,Lamp,Home,4.1,0,Active,0
+ORD5126,CUST1126,35,Female,PROD326,UK,2021-09-06 00:00:00,10/18/2024,1,active,178.81,1,41,Smartwatch,Electronics,4.3,0,Active,10
+ORD5127,CUST1127,45,Female,PROD327,Germany,7/25/2022,2/27/2023,2,cancelled,167.69,5,49,Headphones,Electronics,4.2,1,Cancelled subscription,50
+ORD5128,CUST1128,49,Female,PROD328,Germany,9/28/2022,2022-12-10 00:00:00,2,active,19.56,6,43,Bluetooth Speaker,Electronics,4.2,0,Active,20
+ORD5129,CUST1129,31,Male,PROD329,UK,4/24/2021,2024-10-01 00:00:00,0,active,170.27,3,34,Shampoo,Beauty,4.4,0,Active,0
+ORD5130,CUST1130,33,Male,PROD330,Germany,10/20/2022,2024-07-08 00:00:00,3,cancelled,968.05,2,3,Smartwatch,Electronics,4.3,1,Too many cancellations,80
+ORD5131,CUST1131,21,Female,PROD331,UK,2021-08-11 00:00:00,1/25/2025,0,cancelled,184.34,6,13,Tablet,Electronics,4.3,1,Cancelled subscription,30
+ORD5132,CUST1132,59,Female,PROD332,USA,7/13/2022,2023-12-06 00:00:00,3,active,332.14,4,3,Skirt,Clothing,4.0,0,Active,50
+ORD5133,CUST1133,46,Female,PROD333,Germany,6/29/2021,2022-04-11 00:00:00,2,active,42.65,5,34,Tennis Racket,Sports,3.9,0,Active,20
+ORD5134,CUST1134,35,Male,PROD334,UK,2021-05-09 00:00:00,11/18/2024,1,active,21.3,9,43,Cycling Helmet,Sports,4.2,0,Active,10
+ORD5135,CUST1135,51,Male,PROD335,USA,5/20/2023,5/17/2024,5,cancelled,111.78,7,28,Microwave,Home,4.3,1,Too many cancellations,80
+ORD5136,CUST1136,51,Female,PROD336,India,2022-10-01 00:00:00,2022-08-07 00:00:00,1,active,103.26,7,25,Face Wash,Beauty,3.9,0,Active,10
+ORD5137,CUST1137,39,Female,PROD337,USA,2021-02-05 00:00:00,2024-11-07 00:00:00,3,active,5.48,9,11,Headphones,Electronics,4.6,0,Active,30
+ORD5138,CUST1138,36,Female,PROD338,Germany,2023-07-04 00:00:00,2023-09-05 00:00:00,3,active,151.96,5,16,Cycling Helmet,Sports,3.9,0,Active,30
+ORD5139,CUST1139,49,Female,PROD339,Pakistan,2023-07-06 00:00:00,7/19/2023,3,active,152.78,9,12,Sneakers,Clothing,4.3,0,Active,30
+ORD5140,CUST1140,55,Male,PROD340,UK,2/14/2022,2/25/2024,2,active,179.86,7,3,Cycling Helmet,Sports,4.1,0,Active,40
+ORD5141,CUST1141,19,Female,PROD341,Germany,3/24/2023,2024-03-11 00:00:00,4,cancelled,218.72,8,9,Sneakers,Clothing,4.4,1,Too many cancellations,70
+ORD5142,CUST1142,47,Female,PROD342,UK,2023-02-06 00:00:00,3/28/2025,0,cancelled,177.72,4,46,T-Shirt,Clothing,3.2,1,Cancelled subscription,30
+ORD5143,CUST1143,53,Female,PROD343,India,10/20/2021,4/26/2025,5,active,224.37,4,30,Conditioner,Beauty,4.2,0,Active,50
+ORD5144,CUST1144,46,Female,PROD344,India,2021-10-11 00:00:00,6/26/2024,3,active,283.6,7,18,Dress,Clothing,4.2,0,Active,30
+ORD5145,CUST1145,48,Male,PROD345,Germany,2021-07-08 00:00:00,2024-05-09 00:00:00,2,cancelled,167.0,9,23,Skirt,Clothing,3.7,1,Cancelled subscription,50
+ORD5146,CUST1146,47,Female,PROD346,USA,3/17/2021,10/30/2023,1,active,121.06,6,24,Jeans,Clothing,4.5,0,Active,10
+ORD5147,CUST1147,26,Other,PROD347,Germany,8/24/2022,2/28/2025,5,active,433.59,3,28,Headphones,Electronics,4.2,0,Active,50
+ORD5148,CUST1148,20,Male,PROD348,India,2021-05-12 00:00:00,7/25/2024,1,active,230.28,5,17,Lamp,Home,4.2,0,Active,10
+ORD5149,CUST1149,51,Male,PROD349,Germany,9/23/2021,2024-05-02 00:00:00,2,cancelled,8.24,6,37,Nail Polish,Beauty,4.2,1,Cancelled subscription,50
+ORD5150,CUST1150,20,Male,PROD350,Germany,9/22/2021,2022-07-10 00:00:00,3,cancelled,634.46,3,40,Shirt,Clothing,4.1,1,Too many cancellations,60
+ORD5151,CUST1151,49,Female,PROD351,USA,12/26/2020,2022-01-05 00:00:00,3,active,156.77,8,40,Nail Polish,Beauty,4.3,0,Active,30
+ORD5152,CUST1152,27,Female,PROD352,Pakistan,2021-09-11 00:00:00,1/18/2023,5,active,172.17,7,41,Microwave,Home,4.3,0,Active,50
+ORD5153,CUST1153,52,Female,PROD353,India,7/27/2022,2024-08-07 00:00:00,2,active,1308.29,1,18,Jacket,Clothing,4.3,0,Active,20
+ORD5154,CUST1154,24,Other,PROD354,UK,10/13/2020,12/20/2024,1,cancelled,773.0,2,42,Face Wash,Beauty,3.4,1,Cancelled subscription,40
+ORD5155,CUST1155,54,Female,PROD355,UK,8/28/2022,1/30/2025,1,cancelled,37.35,1,7,Sneakers,Clothing,4.3,1,Cancelled subscription,40
+ORD5156,CUST1156,42,Male,PROD356,Pakistan,2021-06-10 00:00:00,2024-12-08 00:00:00,0,active,210.51,2,1,Jacket,Clothing,4.4,0,Active,20
+ORD5157,CUST1157,55,Male,PROD357,Canada,7/17/2022,2024-07-02 00:00:00,4,cancelled,184.94,7,45,Hoodie,Clothing,3.9,1,Too many cancellations,70
+ORD5158,CUST1158,35,Female,PROD358,Pakistan,11/22/2020,10/14/2021,4,active,34.88,5,24,Lamp,Home,4.1,0,Active,40
+ORD5159,CUST1159,31,Male,PROD359,Pakistan,2022-09-04 00:00:00,2024-09-08 00:00:00,3,active,23.82,9,1,Foundation,Beauty,3.9,0,Active,50
+ORD5160,CUST1160,21,Male,PROD360,Germany,5/22/2022,2022-02-11 00:00:00,1,active,241.3,6,21,Yoga Mat,Sports,4.0,0,Active,10
+ORD5161,CUST1161,65,Female,PROD361,Canada,7/30/2022,8/13/2022,5,active,292.25,3,24,Tennis Racket,Sports,4.3,0,Active,50
+ORD5162,CUST1162,30,Female,PROD362,Canada,9/30/2020,9/30/2023,4,cancelled,139.58,6,44,Blender,Home,4.0,1,Too many cancellations,70
+ORD5163,CUST1163,38,Female,PROD363,Pakistan,2023-02-07 00:00:00,12/21/2024,4,cancelled,400.08,4,38,Running Shoes,Sports,3.9,1,Too many cancellations,70
+ORD5164,CUST1164,64,Male,PROD364,Germany,11/19/2022,3/14/2023,3,paused,901.2,2,34,Vacuum Cleaner,Home,4.5,1,Paused subscription,60
+ORD5165,CUST1165,45,Male,PROD365,Germany,2023-12-05 00:00:00,2024-10-08 00:00:00,5,active,597.67,3,9,Blender,Home,3.9,0,Active,50
+ORD5166,CUST1166,41,Male,PROD366,UK,2021-03-09 00:00:00,11/23/2024,2,cancelled,77.76,3,3,Running Shoes,Sports,4.2,1,Cancelled subscription,70
+ORD5167,CUST1167,38,Male,PROD367,Pakistan,11/23/2021,6/13/2023,1,cancelled,15.8,6,8,Cricket Bat,Sports,4.0,1,Cancelled subscription,40
+ORD5168,CUST1168,62,Other,PROD368,Germany,1/23/2021,2023-04-01 00:00:00,2,active,151.98,5,36,Running Shoes,Sports,4.3,0,Active,20
+ORD5169,CUST1169,47,Male,PROD369,India,2021-02-05 00:00:00,10/28/2022,5,active,35.32,6,49,Shirt,Clothing,4.0,0,Active,50
+ORD5170,CUST1170,65,Female,PROD370,UK,2021-09-05 00:00:00,2024-01-05 00:00:00,5,active,161.03,9,47,Basketball,Sports,4.4,0,Active,50
+ORD5171,CUST1171,36,Female,PROD371,UK,4/17/2021,2024-12-06 00:00:00,1,cancelled,621.17,2,2,Sneakers,Clothing,4.3,1,Cancelled subscription,60
+ORD5172,CUST1172,64,Female,PROD372,Canada,2/19/2022,4/15/2023,0,cancelled,261.65,5,28,Skirt,Clothing,4.0,1,Cancelled subscription,30
+ORD5173,CUST1173,38,Male,PROD373,Pakistan,2022-12-05 00:00:00,2024-02-12 00:00:00,5,cancelled,332.86,5,42,Lamp,Home,4.3,1,Too many cancellations,80
+ORD5174,CUST1174,51,Male,PROD374,Germany,2/15/2023,11/15/2024,4,active,68.45,3,39,Shampoo,Beauty,5.0,0,Active,40
+ORD5175,CUST1175,62,Male,PROD375,Pakistan,9/15/2021,2/19/2024,5,active,274.96,4,26,Smartphone,Electronics,3.7,0,Active,50
+ORD5176,CUST1176,20,Male,PROD376,Pakistan,2023-11-07 00:00:00,7/13/2024,3,cancelled,859.4,2,17,Bluetooth Speaker,Electronics,4.0,1,Too many cancellations,60
+ORD5177,CUST1177,21,Female,PROD377,Canada,11/19/2020,2022-04-11 00:00:00,4,paused,103.64,9,34,Cricket Bat,Sports,4.1,1,Paused subscription,70
+ORD5178,CUST1178,45,Female,PROD378,Canada,11/14/2021,7/19/2022,3,cancelled,993.48,2,18,Perfume,Beauty,4.0,1,Too many cancellations,60
+ORD5179,CUST1179,48,Male,PROD379,Germany,7/24/2021,2021-06-10 00:00:00,2,active,348.34,2,15,Lipstick,Beauty,3.3,0,Active,20
+ORD5180,CUST1180,48,Male,PROD380,Pakistan,2023-10-04 00:00:00,2024-01-05 00:00:00,0,active,18.7,6,33,Microwave,Home,3.8,0,Active,0
+ORD5181,CUST1181,33,Male,PROD381,Pakistan,3/21/2023,4/17/2024,3,cancelled,1543.22,1,42,T-Shirt,Clothing,4.1,1,Too many cancellations,60
+ORD5182,CUST1182,37,Male,PROD382,India,2021-01-08 00:00:00,7/28/2025,0,active,183.2,8,5,Headphones,Electronics,4.1,0,Active,0
+ORD5183,CUST1183,59,Male,PROD383,Canada,4/19/2021,10/14/2022,2,active,215.88,8,23,Smartwatch,Electronics,4.4,0,Active,20
+ORD5184,CUST1184,37,Male,PROD384,USA,2023-09-07 00:00:00,2025-07-03 00:00:00,3,active,1071.13,1,33,Running Shoes,Sports,4.3,0,Active,30
+ORD5185,CUST1185,47,Female,PROD385,Canada,6/22/2022,2/17/2025,2,active,22.07,9,9,Cricket Bat,Sports,4.3,0,Active,20
+ORD5186,CUST1186,62,Female,PROD386,Canada,2021-08-08 00:00:00,2025-12-07 00:00:00,5,active,200.21,4,10,Jacket,Clothing,4.4,0,Active,50
+ORD5187,CUST1187,26,Female,PROD387,India,2023-06-05 00:00:00,3/24/2025,1,cancelled,678.67,2,39,Tennis Racket,Sports,4.3,1,Cancelled subscription,40
+ORD5188,CUST1188,20,Female,PROD388,Pakistan,5/25/2021,2024-10-10 00:00:00,0,active,689.37,2,34,Microwave,Home,3.9,0,Active,0
+ORD5189,CUST1189,40,Male,PROD389,Germany,10/22/2022,2/26/2023,5,active,180.98,6,40,Skirt,Clothing,4.2,0,Active,50
+ORD5190,CUST1190,49,Female,PROD390,Pakistan,7/19/2021,2023-02-01 00:00:00,4,cancelled,148.34,5,7,Camera,Electronics,4.2,1,Too many cancellations,70
+ORD5191,CUST1191,33,Male,PROD391,UK,2/15/2022,10/25/2022,4,cancelled,127.83,7,9,Bluetooth Speaker,Electronics,4.1,1,Too many cancellations,70
+ORD5192,CUST1192,54,Other,PROD392,Pakistan,2021-03-10 00:00:00,2/14/2024,2,active,187.02,8,29,Lipstick,Beauty,4.3,0,Active,20
+ORD5193,CUST1193,28,Male,PROD393,Canada,8/14/2021,2023-02-06 00:00:00,5,active,175.71,7,26,T-Shirt,Clothing,3.7,0,Active,50
+ORD5194,CUST1194,36,Female,PROD394,Canada,2021-10-05 00:00:00,2/18/2022,2,cancelled,39.74,9,10,Conditioner,Beauty,4.1,1,Cancelled subscription,50
+ORD5195,CUST1195,57,Male,PROD395,India,7/19/2023,8/21/2024,0,active,199.73,6,46,Dumbbells,Sports,3.9,0,Active,0
+ORD5196,CUST1196,36,Male,PROD396,India,2020-07-10 00:00:00,12/19/2022,3,active,30.76,9,49,Jeans,Clothing,4.0,0,Active,30
+ORD5197,CUST1197,34,Male,PROD397,USA,2022-01-10 00:00:00,2023-03-03 00:00:00,2,active,429.25,4,45,Headphones,Electronics,4.2,0,Active,20
+ORD5198,CUST1198,39,Female,PROD398,USA,4/25/2022,2024-06-03 00:00:00,4,cancelled,122.72,9,35,Shirt,Clothing,4.4,1,Too many cancellations,70
+ORD5199,CUST1199,32,Male,PROD399,Pakistan,2022-11-10 00:00:00,3/29/2023,4,active,504.16,3,43,Hoodie,Clothing,4.1,0,Active,40
+ORD5200,CUST1200,69,Female,PROD400,Germany,2021-11-07 00:00:00,9/19/2023,2,cancelled,483.12,4,23,Shampoo,Beauty,4.3,1,Cancelled subscription,50
+ORD5201,CUST1201,61,Male,PROD401,India,3/29/2023,2025-02-06 00:00:00,0,cancelled,138.92,6,47,Shirt,Clothing,3.8,1,Cancelled subscription,30
+ORD5202,CUST1202,68,Female,PROD402,UK,2021-06-11 00:00:00,12/27/2022,4,active,299.78,6,13,Vacuum Cleaner,Home,4.4,0,Active,40
+ORD5203,CUST1203,61,Other,PROD403,Germany,7/22/2021,3/15/2023,4,cancelled,296.68,6,6,Dress,Clothing,4.0,1,Too many cancellations,70
+ORD5204,CUST1204,22,Female,PROD404,USA,2021-12-05 00:00:00,10/25/2023,0,active,63.16,2,13,Bluetooth Speaker,Electronics,4.4,0,Active,0
+ORD5205,CUST1205,58,Male,PROD405,India,8/20/2021,4/22/2025,2,cancelled,1484.8,1,13,Headphones,Electronics,4.0,1,Cancelled subscription,50
+ORD5206,CUST1206,59,Female,PROD406,Germany,11/24/2021,2023-11-12 00:00:00,1,active,263.02,6,26,Yoga Mat,Sports,4.2,0,Active,10
+ORD5207,CUST1207,32,Male,PROD407,India,7/16/2023,2023-03-12 00:00:00,1,active,1212.26,1,38,Vacuum Cleaner,Home,3.9,0,Active,10
+ORD5208,CUST1208,37,Male,PROD408,India,2022-12-09 00:00:00,8/17/2023,0,active,1790.4,1,33,Shirt,Clothing,3.7,0,Active,0
+ORD5209,CUST1209,30,Male,PROD409,Pakistan,2022-12-04 00:00:00,9/14/2024,2,active,582.62,2,6,Sneakers,Clothing,3.6,0,Active,20
+ORD5210,CUST1210,30,Female,PROD410,UK,3/14/2022,2/14/2023,0,active,181.32,2,40,Moisturizer,Beauty,4.0,0,Active,0
+ORD5211,CUST1211,65,Male,PROD411,UK,2022-08-03 00:00:00,2/18/2023,2,paused,174.87,9,34,Cricket Bat,Sports,3.5,1,Paused subscription,50
+ORD5212,CUST1212,48,Female,PROD412,Canada,4/26/2022,2024-11-02 00:00:00,4,cancelled,462.9,3,45,Refrigerator,Home,4.5,1,Too many cancellations,70
+ORD5213,CUST1213,56,Female,PROD413,Pakistan,2021-04-01 00:00:00,7/26/2024,2,cancelled,490.01,3,40,Headphones,Electronics,4.2,1,Cancelled subscription,50
+ORD5214,CUST1214,29,Female,PROD414,Germany,10/26/2022,12/14/2023,0,cancelled,1068.34,1,36,Chair,Home,3.8,1,Cancelled subscription,30
+ORD5215,CUST1215,64,Male,PROD415,India,2021-08-03 00:00:00,5/19/2023,4,active,151.03,8,30,Smartphone,Electronics,3.8,0,Active,40
+ORD5216,CUST1216,48,Female,PROD416,Pakistan,2022-06-11 00:00:00,12/24/2022,3,active,152.35,8,32,Refrigerator,Home,4.1,0,Active,30
+ORD5217,CUST1217,59,Male,PROD417,Germany,4/27/2023,2023-04-12 00:00:00,5,active,277.17,7,3,Lipstick,Beauty,4.3,0,Active,70
+ORD5218,CUST1218,36,Female,PROD418,Canada,2022-01-07 00:00:00,2/28/2025,5,active,90.95,1,30,Moisturizer,Beauty,4.4,0,Active,50
+ORD5219,CUST1219,20,Female,PROD419,Canada,8/20/2023,12/29/2023,4,active,813.9,2,38,Cricket Bat,Sports,3.9,0,Active,40
+ORD5220,CUST1220,51,Female,PROD420,Pakistan,2022-06-06 00:00:00,2023-12-07 00:00:00,3,paused,262.87,3,27,Shampoo,Beauty,4.2,1,Paused subscription,60
+ORD5221,CUST1221,49,Female,PROD421,USA,2020-01-10 00:00:00,5/16/2025,2,active,173.2,8,45,Running Shoes,Sports,3.8,0,Active,20
+ORD5222,CUST1222,46,Female,PROD422,Canada,4/26/2022,5/31/2024,1,active,398.18,5,12,Perfume,Beauty,4.1,0,Active,10
+ORD5223,CUST1223,25,Female,PROD423,Pakistan,2023-05-01 00:00:00,10/20/2024,0,active,211.82,8,32,Moisturizer,Beauty,4.1,0,Active,0
+ORD5224,CUST1224,19,Female,PROD424,USA,10/27/2021,2024-09-11 00:00:00,1,active,255.77,6,21,Dumbbells,Sports,4.3,0,Active,10
+ORD5225,CUST1225,62,Female,PROD425,UK,2/27/2023,2024-02-09 00:00:00,5,active,63.52,8,7,Dumbbells,Sports,3.7,0,Active,50
+ORD5226,CUST1226,52,Female,PROD426,Germany,3/19/2021,2022-12-09 00:00:00,2,active,317.31,5,45,Cricket Bat,Sports,4.0,0,Active,20
+ORD5227,CUST1227,52,Other,PROD427,Germany,9/14/2021,5/26/2025,5,active,436.16,2,11,Cycling Helmet,Sports,4.2,0,Active,50
+ORD5228,CUST1228,47,Female,PROD428,Germany,3/16/2022,2/19/2023,0,active,366.64,4,13,Cycling Helmet,Sports,4.1,0,Active,0
+ORD5229,CUST1229,46,Male,PROD429,UK,7/25/2022,1/15/2025,2,active,347.76,4,27,Shirt,Clothing,4.3,0,Active,20
+ORD5230,CUST1230,18,Female,PROD430,India,6/21/2022,5/26/2023,1,active,220.93,8,38,Basketball,Sports,4.4,0,Active,10
+ORD5231,CUST1231,66,Female,PROD431,Pakistan,2023-12-01 00:00:00,2025-01-06 00:00:00,5,active,1331.03,1,33,Sofa,Home,4.3,0,Active,50
+ORD5232,CUST1232,54,Other,PROD432,UK,7/14/2022,2023-06-10 00:00:00,4,cancelled,134.4,5,30,Chair,Home,4.3,1,Too many cancellations,70
+ORD5233,CUST1233,35,Female,PROD433,India,2022-07-04 00:00:00,2024-02-06 00:00:00,1,active,133.25,9,26,Sofa,Home,3.5,0,Active,10
+ORD5234,CUST1234,65,Male,PROD434,USA,11/16/2021,2025-05-01 00:00:00,1,cancelled,210.26,9,15,Cycling Helmet,Sports,3.9,1,Cancelled subscription,40
+ORD5235,CUST1235,22,Female,PROD435,Pakistan,9/22/2020,10/31/2022,0,cancelled,80.21,8,47,Vacuum Cleaner,Home,4.5,1,Cancelled subscription,30
+ORD5236,CUST1236,60,Female,PROD436,Pakistan,9/23/2021,7/16/2022,2,active,133.84,4,11,T-Shirt,Clothing,3.4,0,Active,20
+ORD5237,CUST1237,57,Female,PROD437,Germany,2023-10-01 00:00:00,2023-07-10 00:00:00,1,cancelled,286.69,4,28,Perfume,Beauty,4.0,1,Cancelled subscription,40
+ORD5238,CUST1238,37,Female,PROD438,Canada,11/29/2021,1/26/2023,2,active,55.18,8,3,Smartphone,Electronics,4.0,0,Active,40
+ORD5239,CUST1239,50,Female,PROD439,USA,12/27/2022,2/26/2025,5,active,25.75,7,8,Tennis Racket,Sports,4.4,0,Active,50
+ORD5240,CUST1240,22,Female,PROD440,Germany,5/21/2022,2023-09-04 00:00:00,5,active,7.42,6,22,Lamp,Home,4.0,0,Active,50
+ORD5241,CUST1241,46,Female,PROD441,Canada,9/16/2020,1/23/2022,0,active,430.28,4,39,Jeans,Clothing,4.3,0,Active,0
+ORD5242,CUST1242,59,Male,PROD442,India,2021-09-05 00:00:00,2025-03-05 00:00:00,2,active,307.95,3,40,Bluetooth Speaker,Electronics,4.0,0,Active,20
+ORD5243,CUST1243,53,Female,PROD443,Germany,12/18/2021,2022-12-07 00:00:00,2,active,235.7,1,5,Lipstick,Beauty,4.2,0,Active,20
+ORD5244,CUST1244,40,Female,PROD444,USA,10/17/2022,3/28/2024,5,active,174.95,8,23,Cycling Helmet,Sports,3.8,0,Active,50
+ORD5245,CUST1245,67,Female,PROD445,UK,10/31/2020,7/23/2021,0,active,232.39,4,40,Conditioner,Beauty,4.4,0,Active,0
+ORD5246,CUST1246,26,Male,PROD446,Germany,1/13/2021,3/16/2024,2,active,266.75,4,23,Vacuum Cleaner,Home,3.9,0,Active,20
+ORD5247,CUST1247,67,Female,PROD447,UK,11/18/2022,3/23/2025,5,active,32.82,2,39,Gaming Console,Electronics,4.2,0,Active,50
+ORD5248,CUST1248,23,Male,PROD448,USA,8/29/2021,11/21/2021,2,paused,597.36,3,11,Conditioner,Beauty,3.9,1,Paused subscription,50
+ORD5249,CUST1249,51,Female,PROD449,India,12/18/2022,2024-07-12 00:00:00,1,cancelled,147.45,8,18,Conditioner,Beauty,4.7,1,Cancelled subscription,40
+ORD5250,CUST1250,64,Female,PROD450,India,2/21/2021,11/16/2024,2,active,91.92,7,39,Running Shoes,Sports,3.6,0,Active,20
+ORD5251,CUST1251,42,Female,PROD451,Germany,5/20/2023,2024-08-11 00:00:00,2,active,89.68,6,39,Skirt,Clothing,3.7,0,Active,20
+ORD5252,CUST1252,23,Male,PROD452,Pakistan,5/13/2021,4/17/2024,1,paused,269.62,5,6,Blender,Home,4.2,1,Paused subscription,40
+ORD5253,CUST1253,57,Female,PROD453,India,2021-12-02 00:00:00,2021-11-05 00:00:00,0,active,214.01,1,37,Jeans,Clothing,4.0,0,Active,0
+ORD5254,CUST1254,29,Male,PROD454,India,2022-12-09 00:00:00,3/28/2025,0,active,368.2,2,24,Headphones,Electronics,3.6,0,Active,0
+ORD5255,CUST1255,60,Female,PROD455,USA,2023-09-02 00:00:00,12/18/2023,5,paused,560.24,2,40,Cricket Bat,Sports,4.3,1,Paused subscription,80
+ORD5256,CUST1256,22,Female,PROD456,Germany,5/28/2021,2024-10-09 00:00:00,2,active,262.89,1,44,Dumbbells,Sports,4.2,0,Active,20
+ORD5257,CUST1257,56,Male,PROD457,Canada,10/18/2021,1/24/2025,2,cancelled,113.52,8,14,Football,Sports,4.3,1,Cancelled subscription,50
+ORD5258,CUST1258,65,Female,PROD458,India,2020-02-09 00:00:00,4/20/2025,2,active,78.71,7,35,Dining Table,Home,4.2,0,Active,20
+ORD5259,CUST1259,40,Male,PROD459,USA,2/18/2021,4/17/2025,0,active,283.52,3,48,Smartphone,Electronics,4.2,0,Active,0
+ORD5260,CUST1260,34,Female,PROD460,UK,12/14/2022,2023-06-08 00:00:00,1,active,174.45,9,14,Headphones,Electronics,4.4,0,Active,10
+ORD5261,CUST1261,36,Female,PROD461,UK,2022-02-09 00:00:00,2025-01-08 00:00:00,5,paused,165.34,6,8,Skirt,Clothing,4.2,1,Paused subscription,80
+ORD5262,CUST1262,46,Female,PROD462,India,2023-03-04 00:00:00,9/29/2023,1,active,274.67,4,25,Conditioner,Beauty,4.4,0,Active,10
+ORD5263,CUST1263,65,Male,PROD463,UK,2020-02-09 00:00:00,2023-05-03 00:00:00,5,paused,73.91,5,28,Smartwatch,Electronics,3.0,1,Paused subscription,80
+ORD5264,CUST1264,31,Female,PROD464,Pakistan,7/22/2022,5/30/2024,3,cancelled,330.52,2,37,Foundation,Beauty,4.5,1,Too many cancellations,60
+ORD5265,CUST1265,57,Female,PROD465,Germany,2/27/2023,11/18/2024,3,cancelled,1865.18,1,47,Lipstick,Beauty,4.3,1,Too many cancellations,60
+ORD5266,CUST1266,32,Male,PROD466,Pakistan,4/25/2023,2024-07-03 00:00:00,1,paused,1624.53,1,16,Skirt,Clothing,4.2,1,Paused subscription,40
+ORD5267,CUST1267,47,Male,PROD467,India,7/28/2022,1/19/2024,2,active,222.38,3,12,Lamp,Home,4.4,0,Active,20
+ORD5268,CUST1268,28,Male,PROD468,USA,10/29/2022,2025-02-03 00:00:00,3,active,190.6,8,1,Jeans,Clothing,4.0,0,Active,50
+ORD5269,CUST1269,58,Female,PROD469,UK,11/30/2021,9/19/2022,3,cancelled,157.4,4,45,Blender,Home,3.8,1,Too many cancellations,60
+ORD5270,CUST1270,27,Female,PROD470,Germany,2021-04-05 00:00:00,11/14/2022,1,cancelled,97.56,7,17,Dress,Clothing,4.3,1,Cancelled subscription,40
+ORD5271,CUST1271,52,Female,PROD471,India,2021-06-11 00:00:00,2025-05-03 00:00:00,4,paused,43.76,8,38,Skirt,Clothing,4.2,1,Paused subscription,70
+ORD5272,CUST1272,28,Female,PROD472,USA,10/31/2022,3/27/2023,3,active,238.3,8,41,Vacuum Cleaner,Home,4.1,0,Active,30
+ORD5273,CUST1273,53,Female,PROD473,Pakistan,3/28/2021,2023-06-03 00:00:00,1,active,247.28,6,49,Moisturizer,Beauty,4.0,0,Active,10
+ORD5274,CUST1274,61,Female,PROD474,USA,8/31/2021,2/18/2022,0,active,341.04,3,1,Dining Table,Home,4.2,0,Active,20
+ORD5275,CUST1275,53,Female,PROD475,Germany,2021-06-09 00:00:00,4/21/2022,3,active,730.44,2,46,Moisturizer,Beauty,3.3,0,Active,30
+ORD5276,CUST1276,59,Female,PROD476,UK,5/29/2022,8/22/2024,3,cancelled,14.55,8,12,Headphones,Electronics,4.3,1,Too many cancellations,60
+ORD5277,CUST1277,33,Female,PROD477,India,2022-09-12 00:00:00,5/18/2024,4,active,224.89,6,30,Dining Table,Home,3.8,0,Active,40
+ORD5278,CUST1278,53,Female,PROD478,UK,2023-06-05 00:00:00,4/18/2025,0,paused,244.49,7,41,Bluetooth Speaker,Electronics,4.2,1,Paused subscription,30
+ORD5279,CUST1279,47,Male,PROD479,Germany,10/14/2020,2023-09-09 00:00:00,4,cancelled,284.09,2,49,Running Shoes,Sports,3.7,1,Too many cancellations,70
+ORD5280,CUST1280,52,Male,PROD480,Canada,10/20/2022,2023-05-06 00:00:00,5,active,239.57,4,14,Bluetooth Speaker,Electronics,4.3,0,Active,50
+ORD5281,CUST1281,59,Female,PROD481,UK,2021-04-04 00:00:00,2021-03-08 00:00:00,0,cancelled,102.62,3,23,Yoga Mat,Sports,3.9,1,Cancelled subscription,30
+ORD5282,CUST1282,63,Male,PROD482,Pakistan,5/15/2023,2025-09-08 00:00:00,2,active,26.61,8,28,Headphones,Electronics,3.0,0,Active,20
+ORD5283,CUST1283,29,Male,PROD483,Canada,2021-09-07 00:00:00,10/23/2021,4,active,281.71,5,28,Camera,Electronics,4.3,0,Active,40
+ORD5284,CUST1284,45,Male,PROD484,Germany,2020-06-11 00:00:00,2025-10-08 00:00:00,1,paused,498.41,3,23,Hoodie,Clothing,3.5,1,Paused subscription,40
+ORD5285,CUST1285,54,Female,PROD485,India,5/22/2021,5/29/2023,3,cancelled,150.77,7,39,Jacket,Clothing,3.9,1,Too many cancellations,60
+ORD5286,CUST1286,28,Male,PROD486,UK,11/27/2021,2024-07-01 00:00:00,2,paused,112.52,7,24,Jacket,Clothing,4.0,1,Paused subscription,50
+ORD5287,CUST1287,45,Female,PROD487,UK,2022-09-04 00:00:00,7/29/2025,3,active,194.81,9,15,Vacuum Cleaner,Home,4.3,0,Active,30
+ORD5288,CUST1288,28,Male,PROD488,Pakistan,2022-12-02 00:00:00,2024-07-04 00:00:00,1,active,209.41,5,8,Perfume,Beauty,3.8,0,Active,10
+ORD5289,CUST1289,29,Other,PROD489,USA,2021-08-04 00:00:00,12/23/2021,0,cancelled,494.41,2,22,Shampoo,Beauty,4.3,1,Cancelled subscription,30
+ORD5290,CUST1290,47,Male,PROD490,Pakistan,2/25/2023,2025-05-04 00:00:00,2,active,187.03,5,7,Lamp,Home,3.3,0,Active,20
+ORD5291,CUST1291,41,Female,PROD491,Germany,3/28/2023,7/28/2023,4,active,314.88,4,47,Football,Sports,4.5,0,Active,40
+ORD5292,CUST1292,37,Male,PROD492,India,12/13/2021,12/16/2021,5,cancelled,233.87,5,19,Laptop,Electronics,4.1,1,Too many cancellations,80
+ORD5293,CUST1293,58,Male,PROD493,UK,2023-05-01 00:00:00,1/16/2023,4,active,171.07,6,6,Cycling Helmet,Sports,4.2,0,Active,40
+ORD5294,CUST1294,38,Male,PROD494,Canada,2020-05-10 00:00:00,2021-08-09 00:00:00,5,active,155.44,5,29,Moisturizer,Beauty,4.1,0,Active,50
+ORD5295,CUST1295,68,Male,PROD495,UK,1/15/2023,2025-06-05 00:00:00,0,active,789.5,2,14,Shampoo,Beauty,4.4,0,Active,0
+ORD5296,CUST1296,38,Female,PROD496,UK,2022-09-06 00:00:00,2025-09-06 00:00:00,2,active,232.75,8,5,Smartwatch,Electronics,4.2,0,Active,20
+ORD5297,CUST1297,66,Male,PROD497,Pakistan,2021-08-03 00:00:00,8/21/2024,5,paused,1786.22,1,2,Dress,Clothing,3.9,1,Paused subscription,100
+ORD5298,CUST1298,42,Female,PROD498,USA,2021-01-03 00:00:00,2023-12-05 00:00:00,3,cancelled,216.99,8,15,T-Shirt,Clothing,4.0,1,Too many cancellations,60
+ORD5299,CUST1299,45,Male,PROD499,Pakistan,2/28/2021,12/31/2023,5,cancelled,10.88,9,38,Camera,Electronics,4.5,1,Too many cancellations,80
+ORD5300,CUST1300,19,Female,PROD500,Canada,8/14/2023,2024-02-11 00:00:00,1,active,1226.18,1,25,Conditioner,Beauty,3.7,0,Active,10
+ORD5301,CUST1301,65,Female,PROD501,USA,2023-08-08 00:00:00,3/26/2024,2,active,460.02,4,7,Sofa,Home,4.2,0,Active,20
+ORD5302,CUST1302,55,Female,PROD502,USA,7/28/2023,8/28/2023,3,paused,217.3,7,21,Cricket Bat,Sports,4.2,1,Paused subscription,60
+ORD5303,CUST1303,45,Female,PROD503,Germany,2022-12-09 00:00:00,6/28/2024,1,cancelled,120.62,5,11,Gaming Console,Electronics,4.2,1,Cancelled subscription,40
+ORD5304,CUST1304,35,Male,PROD504,India,10/14/2021,2023-08-06 00:00:00,5,active,90.23,4,6,Smartwatch,Electronics,4.3,0,Active,50
+ORD5305,CUST1305,26,Male,PROD505,Germany,7/28/2021,10/30/2022,3,active,737.62,2,31,Smartwatch,Electronics,4.4,0,Active,30
+ORD5306,CUST1306,56,Female,PROD506,USA,11/13/2022,4/29/2023,4,active,658.94,2,47,Smartphone,Electronics,4.2,0,Active,40
+ORD5307,CUST1307,40,Male,PROD507,Canada,1/17/2022,2022-05-06 00:00:00,0,paused,121.19,3,20,Face Wash,Beauty,4.3,1,Paused subscription,30
+ORD5308,CUST1308,57,Male,PROD508,Germany,2021-08-04 00:00:00,12/14/2021,4,active,583.41,3,49,Dumbbells,Sports,3.7,0,Active,40
+ORD5309,CUST1309,57,Female,PROD509,UK,9/29/2020,10/26/2024,3,active,242.39,6,20,Cricket Bat,Sports,4.3,0,Active,30
+ORD5310,CUST1310,21,Female,PROD510,Germany,3/16/2021,1/22/2023,4,cancelled,84.73,7,6,Camera,Electronics,4.2,1,Too many cancellations,70
+ORD5311,CUST1311,31,Female,PROD511,Germany,9/19/2020,8/28/2021,3,paused,399.32,4,25,Cricket Bat,Sports,4.4,1,Paused subscription,60
+ORD5312,CUST1312,52,Female,PROD512,UK,2020-01-12 00:00:00,10/27/2024,0,active,96.56,7,49,Microwave,Home,3.5,0,Active,0
+ORD5313,CUST1313,27,Other,PROD513,Pakistan,10/21/2021,10/29/2023,4,active,211.81,6,30,Shirt,Clothing,4.1,0,Active,40
+ORD5314,CUST1314,32,Male,PROD514,Canada,2021-08-01 00:00:00,2025-03-02 00:00:00,1,active,227.67,5,15,Smartwatch,Electronics,4.3,0,Active,10
+ORD5315,CUST1315,55,Male,PROD515,Pakistan,2021-02-08 00:00:00,8/28/2024,5,cancelled,65.36,3,49,Perfume,Beauty,4.2,1,Too many cancellations,80
+ORD5316,CUST1316,37,Female,PROD516,Canada,2022-02-03 00:00:00,10/23/2023,2,cancelled,51.02,6,32,Nail Polish,Beauty,4.0,1,Cancelled subscription,50
+ORD5317,CUST1317,19,Female,PROD517,Germany,2023-08-05 00:00:00,9/16/2023,4,active,462.3,2,6,Blender,Home,3.9,0,Active,40
+ORD5318,CUST1318,59,Female,PROD518,USA,2022-11-12 00:00:00,2023-09-12 00:00:00,1,cancelled,126.46,9,48,Perfume,Beauty,3.3,1,Cancelled subscription,40
+ORD5319,CUST1319,67,Male,PROD519,India,8/20/2023,7/22/2024,4,cancelled,65.2,5,32,Dining Table,Home,3.8,1,Too many cancellations,70
+ORD5320,CUST1320,31,Female,PROD520,Germany,2023-07-03 00:00:00,9/24/2023,2,paused,116.64,4,46,Cricket Bat,Sports,4.0,1,Paused subscription,50
+ORD5321,CUST1321,19,Male,PROD521,USA,2023-07-04 00:00:00,2024-05-10 00:00:00,0,active,140.63,6,23,Microwave,Home,4.3,0,Active,0
+ORD5322,CUST1322,41,Female,PROD522,India,8/27/2022,2022-04-12 00:00:00,5,cancelled,152.53,4,49,Bluetooth Speaker,Electronics,3.9,1,Too many cancellations,80
+ORD5323,CUST1323,59,Female,PROD523,Pakistan,7/23/2022,8/19/2024,3,active,285.44,7,46,Dumbbells,Sports,4.2,0,Active,30
+ORD5324,CUST1324,61,Male,PROD524,India,7/27/2023,8/20/2023,5,active,136.3,3,29,Perfume,Beauty,5.0,0,Active,50
+ORD5325,CUST1325,46,Other,PROD525,Canada,2020-10-09 00:00:00,2024-01-10 00:00:00,4,cancelled,556.7,2,39,Gaming Console,Electronics,4.1,1,Too many cancellations,70
+ORD5326,CUST1326,19,Female,PROD526,UK,2021-11-10 00:00:00,10/26/2024,2,active,231.25,6,39,Jeans,Clothing,3.9,0,Active,20
+ORD5327,CUST1327,44,Female,PROD527,Pakistan,2021-02-11 00:00:00,7/18/2022,4,active,105.05,6,15,Shampoo,Beauty,4.2,0,Active,40
+ORD5328,CUST1328,64,Male,PROD528,Pakistan,4/22/2022,8/30/2022,1,active,11.73,5,49,Smartwatch,Electronics,4.3,0,Active,10
+ORD5329,CUST1329,66,Female,PROD529,India,2021-12-09 00:00:00,5/19/2022,0,active,230.61,8,9,Basketball,Sports,3.8,0,Active,0
+ORD5330,CUST1330,60,Female,PROD530,Germany,2021-08-12 00:00:00,2023-08-04 00:00:00,2,active,188.23,8,13,Tablet,Electronics,4.3,0,Active,20
+ORD5331,CUST1331,36,Female,PROD531,Canada,5/28/2022,11/16/2023,0,active,28.65,6,27,Vacuum Cleaner,Home,4.4,0,Active,0
+ORD5332,CUST1332,49,Male,PROD532,Canada,2022-10-08 00:00:00,2024-08-12 00:00:00,2,active,175.42,8,2,Smartwatch,Electronics,4.3,0,Active,40
+ORD5333,CUST1333,45,Female,PROD533,Pakistan,2023-11-07 00:00:00,2/19/2025,4,active,180.09,8,25,Foundation,Beauty,4.3,0,Active,40
+ORD5334,CUST1334,54,Male,PROD534,UK,2021-08-02 00:00:00,11/20/2024,4,active,284.73,7,47,Blender,Home,4.2,0,Active,40
+ORD5335,CUST1335,22,Female,PROD535,Germany,12/24/2021,5/15/2022,0,cancelled,231.43,3,38,Basketball,Sports,4.3,1,Cancelled subscription,30
+ORD5336,CUST1336,22,Female,PROD536,UK,8/24/2021,2025-08-01 00:00:00,5,active,137.29,7,2,Cricket Bat,Sports,3.8,0,Active,70
+ORD5337,CUST1337,22,Female,PROD537,USA,7/19/2023,2024-04-12 00:00:00,0,paused,210.01,7,9,Shirt,Clothing,4.3,1,Paused subscription,30
+ORD5338,CUST1338,45,Female,PROD538,UK,6/14/2022,5/15/2024,3,paused,348.76,4,16,Gaming Console,Electronics,4.0,1,Paused subscription,60
+ORD5339,CUST1339,40,Female,PROD539,UK,9/13/2022,2023-10-11 00:00:00,2,active,219.21,4,23,Laptop,Electronics,4.3,0,Active,20
+ORD5340,CUST1340,21,Female,PROD540,Canada,3/15/2023,3/27/2025,1,active,104.03,7,27,Vacuum Cleaner,Home,4.3,0,Active,10
+ORD5341,CUST1341,27,Male,PROD541,Pakistan,2021-08-10 00:00:00,5/30/2022,2,active,360.74,5,10,Face Wash,Beauty,4.0,0,Active,20
+ORD5342,CUST1342,57,Male,PROD542,Canada,2021-09-01 00:00:00,2/16/2022,1,active,208.01,8,44,Blender,Home,4.0,0,Active,10
+ORD5343,CUST1343,59,Male,PROD543,Canada,2/16/2023,7/30/2023,5,active,235.36,5,30,Camera,Electronics,4.4,0,Active,50
+ORD5344,CUST1344,21,Male,PROD544,USA,4/14/2021,6/23/2025,0,active,6.45,7,37,Conditioner,Beauty,4.1,0,Active,0
+ORD5345,CUST1345,35,Male,PROD545,UK,12/26/2021,2022-09-12 00:00:00,4,active,205.55,2,15,Laptop,Electronics,4.0,0,Active,40
+ORD5346,CUST1346,37,Female,PROD546,Germany,10/14/2021,2022-05-12 00:00:00,2,active,224.15,1,7,Smartwatch,Electronics,3.9,0,Active,20
+ORD5347,CUST1347,26,Female,PROD547,Pakistan,2020-12-10 00:00:00,2024-02-01 00:00:00,1,active,115.98,2,4,Blender,Home,4.1,0,Active,30
+ORD5348,CUST1348,41,Male,PROD548,Germany,9/27/2021,8/19/2023,0,cancelled,26.33,1,11,Laptop,Electronics,4.2,1,Cancelled subscription,30
+ORD5349,CUST1349,43,Male,PROD549,Canada,2023-01-05 00:00:00,11/25/2024,1,active,172.3,6,8,Basketball,Sports,3.9,0,Active,10
+ORD5350,CUST1350,61,Female,PROD550,UK,6/18/2021,1/22/2024,3,active,374.37,5,36,Blender,Home,4.0,0,Active,30
+ORD5351,CUST1351,51,Female,PROD551,Pakistan,10/28/2021,2/17/2022,0,cancelled,296.71,6,2,Jeans,Clothing,4.0,1,Cancelled subscription,50
+ORD5352,CUST1352,57,Female,PROD552,USA,11/18/2021,8/14/2025,4,cancelled,575.92,3,14,Skirt,Clothing,4.1,1,Too many cancellations,70
+ORD5353,CUST1353,34,Female,PROD553,Germany,3/20/2021,2022-09-09 00:00:00,2,cancelled,214.73,7,49,Tablet,Electronics,4.4,1,Cancelled subscription,50
+ORD5354,CUST1354,22,Female,PROD554,UK,12/18/2022,2024-10-07 00:00:00,4,cancelled,416.03,3,8,Dining Table,Home,4.2,1,Too many cancellations,70
+ORD5355,CUST1355,50,Male,PROD555,Pakistan,11/19/2020,11/28/2022,0,cancelled,219.47,6,38,Football,Sports,4.3,1,Cancelled subscription,30
+ORD5356,CUST1356,66,Female,PROD556,UK,2020-03-11 00:00:00,2025-11-03 00:00:00,0,active,34.42,7,29,Lipstick,Beauty,4.3,0,Active,0
+ORD5357,CUST1357,66,Male,PROD557,UK,8/21/2021,2/15/2023,3,active,128.99,9,29,Blender,Home,3.9,0,Active,30
+ORD5358,CUST1358,47,Female,PROD558,Canada,2020-12-09 00:00:00,2/14/2023,0,active,148.19,8,26,Dress,Clothing,4.4,0,Active,0
+ORD5359,CUST1359,39,Female,PROD559,India,2021-06-12 00:00:00,5/28/2025,5,cancelled,343.33,5,44,Running Shoes,Sports,4.0,1,Too many cancellations,80
+ORD5360,CUST1360,48,Female,PROD560,India,2023-01-08 00:00:00,7/31/2024,5,active,146.28,4,36,Sneakers,Clothing,4.2,0,Active,50
+ORD5361,CUST1361,23,Male,PROD561,India,2022-05-08 00:00:00,10/30/2022,1,cancelled,165.06,9,48,Sneakers,Clothing,4.1,1,Cancelled subscription,40
+ORD5362,CUST1362,18,Female,PROD562,Germany,2021-11-06 00:00:00,10/24/2021,1,active,222.3,8,3,Vacuum Cleaner,Home,4.4,0,Active,30
+ORD5363,CUST1363,29,Female,PROD563,UK,10/19/2021,10/21/2023,4,cancelled,662.89,3,9,Vacuum Cleaner,Home,4.1,1,Too many cancellations,70
+ORD5364,CUST1364,21,Female,PROD564,Germany,10/23/2020,1/29/2021,5,cancelled,134.18,9,41,Shampoo,Beauty,4.2,1,Too many cancellations,80
+ORD5365,CUST1365,32,Male,PROD565,Pakistan,2021-01-02 00:00:00,10/15/2022,4,active,57.06,4,21,Camera,Electronics,4.2,0,Active,40
+ORD5366,CUST1366,60,Female,PROD566,India,2/22/2022,10/20/2023,3,active,668.04,2,17,Smartphone,Electronics,4.1,0,Active,30
+ORD5367,CUST1367,27,Female,PROD567,Pakistan,2021-12-02 00:00:00,7/23/2024,3,active,348.12,4,24,Lamp,Home,4.0,0,Active,30
+ORD5368,CUST1368,66,Male,PROD568,USA,2023-06-05 00:00:00,6/27/2025,3,cancelled,76.13,7,7,Skirt,Clothing,4.2,1,Too many cancellations,60
+ORD5369,CUST1369,27,Female,PROD569,USA,2021-09-05 00:00:00,4/18/2023,4,active,89.75,7,22,Sneakers,Clothing,4.2,0,Active,40
+ORD5370,CUST1370,37,Male,PROD570,UK,9/30/2021,9/23/2024,1,active,390.53,5,16,Basketball,Sports,4.1,0,Active,10
+ORD5371,CUST1371,43,Female,PROD571,Canada,1/19/2023,6/20/2025,5,active,725.84,2,24,Vacuum Cleaner,Home,4.1,0,Active,50
+ORD5372,CUST1372,63,Male,PROD572,Germany,10/18/2022,2024-02-12 00:00:00,4,active,604.52,3,7,Camera,Electronics,4.2,0,Active,40
+ORD5373,CUST1373,64,Female,PROD573,Germany,10/20/2021,4/23/2024,2,active,316.46,6,37,Dumbbells,Sports,4.0,0,Active,20
+ORD5374,CUST1374,19,Male,PROD574,India,4/14/2021,11/16/2023,4,cancelled,75.21,6,38,Microwave,Home,4.3,1,Too many cancellations,70
+ORD5375,CUST1375,63,Male,PROD575,Germany,5/29/2022,2023-01-09 00:00:00,5,paused,399.54,4,17,Face Wash,Beauty,4.3,1,Paused subscription,80
+ORD5376,CUST1376,56,Female,PROD576,Germany,4/13/2022,2024-07-02 00:00:00,5,active,12.03,7,42,T-Shirt,Clothing,4.1,0,Active,50
+ORD5377,CUST1377,33,Male,PROD577,Germany,7/28/2021,2024-08-10 00:00:00,3,active,54.72,4,34,Dining Table,Home,4.0,0,Active,30
+ORD5378,CUST1378,48,Male,PROD578,Canada,2022-10-04 00:00:00,2024-03-12 00:00:00,1,active,122.74,5,40,Tablet,Electronics,4.1,0,Active,10
+ORD5379,CUST1379,47,Female,PROD579,Germany,12/14/2021,2023-01-03 00:00:00,1,paused,23.7,6,48,Headphones,Electronics,3.9,1,Paused subscription,40
+ORD5380,CUST1380,46,Male,PROD580,India,2023-10-07 00:00:00,2023-08-10 00:00:00,1,paused,181.5,3,20,Refrigerator,Home,4.2,1,Paused subscription,40
+ORD5381,CUST1381,66,Female,PROD581,Germany,7/22/2023,7/28/2025,3,active,195.6,2,45,Conditioner,Beauty,4.0,0,Active,30
+ORD5382,CUST1382,60,Female,PROD582,Pakistan,1/13/2021,5/15/2025,5,cancelled,107.92,9,14,Lipstick,Beauty,4.4,1,Too many cancellations,80
+ORD5383,CUST1383,39,Female,PROD583,UK,5/26/2023,7/25/2024,2,active,577.66,3,18,Camera,Electronics,4.2,0,Active,20
+ORD5384,CUST1384,31,Male,PROD584,Pakistan,5/18/2022,2024-09-05 00:00:00,5,active,81.15,7,41,Basketball,Sports,3.8,0,Active,50
+ORD5385,CUST1385,26,Female,PROD585,UK,2023-05-05 00:00:00,2024-04-03 00:00:00,4,paused,68.54,8,18,Gaming Console,Electronics,4.3,1,Paused subscription,70
+ORD5386,CUST1386,34,Male,PROD586,India,10/27/2022,2023-03-03 00:00:00,3,cancelled,193.43,8,23,Running Shoes,Sports,4.2,1,Too many cancellations,60
+ORD5387,CUST1387,44,Male,PROD587,UK,1/18/2022,5/15/2022,5,active,276.7,6,22,Blender,Home,3.9,0,Active,50
+ORD5388,CUST1388,61,Male,PROD588,Germany,12/31/2021,3/30/2022,0,cancelled,51.83,2,12,Basketball,Sports,4.4,1,Cancelled subscription,30
+ORD5389,CUST1389,46,Female,PROD589,UK,12/16/2020,3/31/2021,1,active,133.73,8,33,Vacuum Cleaner,Home,4.0,0,Active,10
+ORD5390,CUST1390,64,Male,PROD590,UK,2022-08-01 00:00:00,2025-05-06 00:00:00,4,paused,52.44,4,34,Smartphone,Electronics,4.0,1,Paused subscription,70
+ORD5391,CUST1391,60,Female,PROD591,India,7/30/2021,2024-05-01 00:00:00,0,active,1499.71,1,29,Cricket Bat,Sports,3.8,0,Active,0
+ORD5392,CUST1392,66,Male,PROD592,Canada,2022-08-03 00:00:00,4/26/2024,1,paused,562.84,3,26,Foundation,Beauty,4.2,1,Paused subscription,40
+ORD5393,CUST1393,62,Female,PROD593,India,2021-02-04 00:00:00,4/19/2021,0,active,1366.86,1,45,Lamp,Home,4.2,0,Active,0
+ORD5394,CUST1394,43,Female,PROD594,USA,5/14/2022,5/28/2022,3,active,290.28,6,38,Smartphone,Electronics,4.4,0,Active,30
+ORD5395,CUST1395,60,Male,PROD595,India,9/29/2022,7/31/2023,1,active,134.53,9,45,Dumbbells,Sports,4.2,0,Active,10
+ORD5396,CUST1396,52,Female,PROD596,India,1/25/2021,11/24/2021,0,active,434.16,2,43,Dumbbells,Sports,4.0,0,Active,0
+ORD5397,CUST1397,55,Female,PROD597,Canada,1/23/2021,9/24/2022,0,paused,44.89,7,2,Perfume,Beauty,4.3,1,Paused subscription,50
+ORD5398,CUST1398,63,Other,PROD598,Pakistan,7/14/2021,3/25/2025,0,paused,158.19,7,15,Face Wash,Beauty,4.1,1,Paused subscription,30
+ORD5399,CUST1399,43,Female,PROD599,Pakistan,2022-03-10 00:00:00,1/23/2024,3,cancelled,130.46,7,17,Yoga Mat,Sports,4.1,1,Too many cancellations,60
+ORD5400,CUST1400,68,Female,PROD600,Germany,2021-03-12 00:00:00,8/14/2024,5,active,90.5,4,32,Gaming Console,Electronics,4.1,0,Active,50
+ORD5401,CUST1401,60,Male,PROD601,Pakistan,2023-12-08 00:00:00,2/22/2024,0,cancelled,132.55,3,25,Sneakers,Clothing,4.1,1,Cancelled subscription,30
+ORD5402,CUST1402,27,Female,PROD602,Germany,2021-12-05 00:00:00,2023-07-08 00:00:00,2,cancelled,315.0,2,25,Laptop,Electronics,4.4,1,Cancelled subscription,50
+ORD5403,CUST1403,31,Male,PROD603,India,3/15/2022,2022-12-11 00:00:00,0,active,19.5,6,14,Microwave,Home,3.9,0,Active,0
+ORD5404,CUST1404,52,Female,PROD604,India,2022-11-10 00:00:00,9/19/2023,5,active,74.49,7,4,Headphones,Electronics,4.3,0,Active,70
+ORD5405,CUST1405,40,Male,PROD605,India,2020-05-09 00:00:00,6/26/2024,0,paused,539.41,3,33,Skirt,Clothing,4.0,1,Paused subscription,30
+ORD5406,CUST1406,66,Female,PROD606,USA,2023-11-08 00:00:00,2025-04-03 00:00:00,2,active,101.02,7,19,T-Shirt,Clothing,4.3,0,Active,20
+ORD5407,CUST1407,22,Female,PROD607,UK,2022-11-03 00:00:00,8/23/2023,2,cancelled,1263.8,1,6,Lipstick,Beauty,4.0,1,Cancelled subscription,50
+ORD5408,CUST1408,56,Male,PROD608,USA,2023-06-03 00:00:00,7/26/2024,0,active,643.24,3,44,Face Wash,Beauty,3.6,0,Active,0
+ORD5409,CUST1409,61,Female,PROD609,USA,5/31/2023,2025-07-02 00:00:00,5,paused,217.29,8,7,Lamp,Home,4.1,1,Paused subscription,80
+ORD5410,CUST1410,61,Male,PROD610,Germany,10/23/2021,2022-01-10 00:00:00,5,active,94.79,8,1,Moisturizer,Beauty,4.2,0,Active,70
+ORD5411,CUST1411,64,Female,PROD611,Germany,3/19/2022,2025-12-08 00:00:00,0,active,305.8,5,23,Tablet,Electronics,4.1,0,Active,0
+ORD5412,CUST1412,65,Female,PROD612,Pakistan,2020-11-09 00:00:00,2025-07-08 00:00:00,3,active,41.08,4,18,Headphones,Electronics,4.1,0,Active,30
+ORD5413,CUST1413,58,Male,PROD613,India,3/23/2023,2024-04-11 00:00:00,1,active,155.84,8,29,Tennis Racket,Sports,4.0,0,Active,10
+ORD5414,CUST1414,33,Male,PROD614,UK,2023-09-06 00:00:00,10/25/2024,2,active,410.16,3,31,Jacket,Clothing,4.0,0,Active,20
+ORD5415,CUST1415,24,Female,PROD615,Germany,2022-10-05 00:00:00,2024-11-06 00:00:00,1,active,350.48,3,32,Sneakers,Clothing,3.5,0,Active,10
+ORD5416,CUST1416,62,Male,PROD616,Pakistan,10/28/2022,2024-10-01 00:00:00,0,active,216.64,8,32,Face Wash,Beauty,4.3,0,Active,0
+ORD5417,CUST1417,42,Male,PROD617,India,6/15/2021,2025-09-07 00:00:00,4,active,75.2,6,11,Perfume,Beauty,4.1,0,Active,40
+ORD5418,CUST1418,22,Female,PROD618,UK,2023-07-04 00:00:00,2025-08-07 00:00:00,3,active,17.09,7,4,Shampoo,Beauty,4.1,0,Active,50
+ORD5419,CUST1419,65,Female,PROD619,Canada,2022-06-03 00:00:00,12/17/2023,1,paused,4.22,9,31,Sneakers,Clothing,4.1,1,Paused subscription,40
+ORD5420,CUST1420,39,Other,PROD620,Canada,2021-04-02 00:00:00,1/19/2024,4,paused,89.67,2,35,Lipstick,Beauty,4.1,1,Paused subscription,70
+ORD5421,CUST1421,37,Male,PROD621,USA,5/15/2022,1/16/2025,2,active,57.72,4,11,Vacuum Cleaner,Home,3.8,0,Active,20
+ORD5422,CUST1422,40,Female,PROD622,Germany,2022-07-06 00:00:00,9/26/2024,1,active,288.26,5,32,Jacket,Clothing,4.3,0,Active,10
+ORD5423,CUST1423,21,Male,PROD623,Pakistan,2023-08-07 00:00:00,2/20/2025,2,active,37.13,8,9,Skirt,Clothing,4.0,0,Active,20
+ORD5424,CUST1424,55,Female,PROD624,Canada,2021-09-08 00:00:00,9/22/2024,5,cancelled,1799.69,1,39,Smartphone,Electronics,4.2,1,Too many cancellations,80
+ORD5425,CUST1425,26,Male,PROD625,Canada,6/27/2023,12/19/2023,1,active,367.19,3,49,Headphones,Electronics,4.1,0,Active,10
+ORD5426,CUST1426,27,Female,PROD626,UK,2023-08-05 00:00:00,9/15/2024,4,paused,174.1,7,40,Shirt,Clothing,4.1,1,Paused subscription,70
+ORD5427,CUST1427,35,Female,PROD627,USA,2022-11-07 00:00:00,12/22/2024,3,cancelled,208.23,7,3,Laptop,Electronics,4.1,1,Too many cancellations,80
+ORD5428,CUST1428,19,Male,PROD628,USA,2022-04-07 00:00:00,1/17/2025,2,active,106.21,8,40,Conditioner,Beauty,4.3,0,Active,20
+ORD5429,CUST1429,54,Female,PROD629,Germany,2023-06-04 00:00:00,2024-10-01 00:00:00,5,cancelled,93.51,9,19,Moisturizer,Beauty,3.9,1,Too many cancellations,80
+ORD5430,CUST1430,57,Female,PROD630,India,1/16/2021,12/13/2024,0,cancelled,409.61,3,41,Basketball,Sports,4.0,1,Cancelled subscription,30
+ORD5431,CUST1431,41,Female,PROD631,UK,8/24/2022,12/19/2023,5,active,397.5,2,23,Moisturizer,Beauty,4.5,0,Active,50
+ORD5432,CUST1432,25,Male,PROD632,India,12/21/2022,2023-07-06 00:00:00,4,cancelled,65.33,6,15,Shirt,Clothing,4.0,1,Too many cancellations,70
+ORD5433,CUST1433,48,Female,PROD633,Pakistan,2022-08-01 00:00:00,2022-03-12 00:00:00,3,active,83.72,5,40,Dumbbells,Sports,4.0,0,Active,30
+ORD5434,CUST1434,43,Male,PROD634,Germany,8/29/2021,4/28/2023,0,cancelled,368.73,3,5,Chair,Home,4.1,1,Cancelled subscription,30
+ORD5435,CUST1435,54,Male,PROD635,Germany,7/26/2021,11/26/2023,5,paused,148.77,9,48,Sneakers,Clothing,4.1,1,Paused subscription,80
+ORD5436,CUST1436,50,Male,PROD636,Pakistan,7/24/2022,2024-02-04 00:00:00,1,active,302.58,6,37,Shampoo,Beauty,3.9,0,Active,10
+ORD5437,CUST1437,54,Female,PROD637,Pakistan,2022-03-04 00:00:00,2024-10-07 00:00:00,0,active,34.76,8,13,Skirt,Clothing,4.1,0,Active,0
+ORD5438,CUST1438,59,Other,PROD638,Pakistan,2/15/2023,2024-05-03 00:00:00,3,cancelled,347.58,4,11,Moisturizer,Beauty,4.1,1,Too many cancellations,60
+ORD5439,CUST1439,32,Male,PROD639,USA,7/16/2022,4/28/2024,1,active,43.74,4,31,Dining Table,Home,4.0,0,Active,10
+ORD5440,CUST1440,34,Female,PROD640,USA,5/15/2022,2025-12-01 00:00:00,5,active,123.64,1,36,Skirt,Clothing,4.3,0,Active,50
+ORD5441,CUST1441,67,Male,PROD641,India,2/13/2022,2/15/2023,1,active,96.8,6,18,Headphones,Electronics,4.0,0,Active,10
+ORD5442,CUST1442,67,Female,PROD642,Pakistan,10/30/2020,2025-09-02 00:00:00,2,active,64.18,3,10,Headphones,Electronics,4.1,0,Active,20
+ORD5443,CUST1443,39,Female,PROD643,UK,2023-01-05 00:00:00,8/17/2023,2,active,1409.68,1,20,Running Shoes,Sports,4.2,0,Active,20
+ORD5444,CUST1444,31,Male,PROD644,India,2023-03-03 00:00:00,2025-10-01 00:00:00,5,active,276.06,6,19,Sofa,Home,4.0,0,Active,50
+ORD5445,CUST1445,56,Male,PROD645,UK,9/30/2022,2024-07-05 00:00:00,0,active,104.88,8,49,Camera,Electronics,4.1,0,Active,0
+ORD5446,CUST1446,39,Female,PROD646,Pakistan,2023-01-08 00:00:00,2023-07-09 00:00:00,0,cancelled,552.26,1,18,Camera,Electronics,4.2,1,Cancelled subscription,30
+ORD5447,CUST1447,61,Female,PROD647,Pakistan,2022-10-06 00:00:00,10/29/2022,0,active,1510.04,1,30,Blender,Home,4.6,0,Active,0
+ORD5448,CUST1448,29,Female,PROD648,Germany,12/13/2020,2024-06-11 00:00:00,5,active,300.19,3,4,Smartwatch,Electronics,4.0,0,Active,70
+ORD5449,CUST1449,38,Male,PROD649,UK,4/30/2021,2024-10-04 00:00:00,3,paused,90.89,9,32,Cricket Bat,Sports,4.0,1,Paused subscription,60
+ORD5450,CUST1450,34,Male,PROD650,Germany,2022-06-07 00:00:00,2022-12-10 00:00:00,0,active,260.15,1,45,Jeans,Clothing,4.3,0,Active,0
+ORD5451,CUST1451,25,Male,PROD651,Pakistan,2023-12-06 00:00:00,10/21/2024,1,active,38.72,8,32,Shampoo,Beauty,4.3,0,Active,10
+ORD5452,CUST1452,22,Male,PROD652,India,2/20/2021,8/25/2022,4,paused,178.02,6,48,Chair,Home,4.2,1,Paused subscription,70
+ORD5453,CUST1453,44,Female,PROD653,Germany,2022-04-10 00:00:00,2024-11-07 00:00:00,4,paused,388.51,2,32,Dumbbells,Sports,4.0,1,Paused subscription,70
+ORD5454,CUST1454,45,Female,PROD654,Pakistan,2023-01-02 00:00:00,5/26/2023,2,cancelled,191.94,9,40,Blender,Home,4.2,1,Cancelled subscription,50
+ORD5455,CUST1455,65,Female,PROD655,India,11/21/2022,2024-05-10 00:00:00,4,active,48.2,9,32,Shirt,Clothing,4.0,0,Active,40
+ORD5456,CUST1456,64,Female,PROD656,India,2/27/2023,2024-11-04 00:00:00,2,active,25.98,6,44,Dining Table,Home,4.1,0,Active,20
+ORD5457,CUST1457,52,Male,PROD657,USA,2022-04-06 00:00:00,2024-10-06 00:00:00,2,active,391.53,3,2,Nail Polish,Beauty,3.9,0,Active,40
+ORD5458,CUST1458,25,Female,PROD658,Pakistan,6/13/2023,4/29/2025,1,active,455.29,3,41,Dumbbells,Sports,3.8,0,Active,10
+ORD5459,CUST1459,50,Female,PROD659,Pakistan,2021-10-06 00:00:00,8/21/2022,2,active,1137.99,1,16,Lamp,Home,4.7,0,Active,20
+ORD5460,CUST1460,66,Female,PROD660,India,11/26/2022,2024-05-03 00:00:00,4,active,207.28,8,14,Foundation,Beauty,4.3,0,Active,40
+ORD5461,CUST1461,66,Female,PROD661,India,9/25/2021,5/16/2024,5,cancelled,324.54,6,40,Refrigerator,Home,4.2,1,Too many cancellations,80
+ORD5462,CUST1462,24,Female,PROD662,Canada,11/24/2020,2/22/2021,0,active,206.15,5,10,Shampoo,Beauty,4.1,0,Active,0
+ORD5463,CUST1463,46,Male,PROD663,Canada,3/14/2021,2023-05-06 00:00:00,1,paused,1493.98,1,21,Smartphone,Electronics,3.3,1,Paused subscription,40
+ORD5464,CUST1464,39,Male,PROD664,India,1/16/2022,2025-07-05 00:00:00,5,paused,553.36,2,10,Sneakers,Clothing,4.4,1,Paused subscription,80
+ORD5465,CUST1465,26,Female,PROD665,Pakistan,10/13/2021,2022-07-02 00:00:00,3,active,178.28,6,41,Vacuum Cleaner,Home,4.0,0,Active,30
+ORD5466,CUST1466,36,Female,PROD666,India,2023-11-03 00:00:00,1/16/2024,5,cancelled,638.11,1,25,Tablet,Electronics,4.2,1,Too many cancellations,80
+ORD5467,CUST1467,37,Female,PROD667,India,8/18/2021,12/14/2021,1,active,225.32,8,34,Blender,Home,4.5,0,Active,10
+ORD5468,CUST1468,35,Female,PROD668,Canada,9/22/2021,2023-09-02 00:00:00,2,active,133.5,9,49,Basketball,Sports,4.6,0,Active,20
+ORD5469,CUST1469,44,Male,PROD669,Germany,2023-12-02 00:00:00,8/29/2023,2,cancelled,213.51,6,19,Football,Sports,4.2,1,Cancelled subscription,50
+ORD5470,CUST1470,51,Female,PROD670,Germany,11/26/2022,3/27/2023,0,active,185.37,8,36,Conditioner,Beauty,4.0,0,Active,0
+ORD5471,CUST1471,35,Female,PROD671,USA,4/20/2023,6/22/2025,0,cancelled,87.8,8,4,Skirt,Clothing,3.7,1,Cancelled subscription,50
+ORD5472,CUST1472,51,Male,PROD672,UK,4/21/2023,1/14/2025,0,cancelled,97.78,4,29,Perfume,Beauty,4.1,1,Cancelled subscription,30
+ORD5473,CUST1473,56,Male,PROD673,Pakistan,5/20/2023,2023-02-06 00:00:00,2,active,197.6,9,38,Dress,Clothing,4.1,0,Active,20
+ORD5474,CUST1474,37,Female,PROD674,USA,2021-04-08 00:00:00,1/31/2023,0,active,532.09,2,46,Dining Table,Home,4.2,0,Active,0
+ORD5475,CUST1475,40,Female,PROD675,Canada,2020-09-12 00:00:00,3/30/2023,1,cancelled,196.12,5,7,Shirt,Clothing,4.2,1,Cancelled subscription,40
+ORD5476,CUST1476,40,Female,PROD676,Pakistan,5/20/2022,6/24/2024,5,cancelled,313.86,6,12,Dumbbells,Sports,4.5,1,Too many cancellations,80
+ORD5477,CUST1477,31,Female,PROD677,Germany,10/14/2022,9/17/2023,1,cancelled,417.52,2,34,T-Shirt,Clothing,3.8,1,Cancelled subscription,40
+ORD5478,CUST1478,23,Female,PROD678,India,11/29/2020,1/22/2025,3,active,124.76,8,27,Jeans,Clothing,4.0,0,Active,30
+ORD5479,CUST1479,32,Female,PROD679,India,10/16/2022,2025-05-03 00:00:00,2,cancelled,90.21,6,2,Smartwatch,Electronics,4.1,1,Cancelled subscription,70
+ORD5480,CUST1480,46,Other,PROD680,Pakistan,2021-12-10 00:00:00,7/23/2025,4,paused,277.47,4,7,Sneakers,Clothing,3.8,1,Paused subscription,70
+ORD5481,CUST1481,65,Male,PROD681,USA,4/21/2023,5/31/2023,0,cancelled,132.87,5,2,Laptop,Electronics,4.1,1,Cancelled subscription,50
+ORD5482,CUST1482,19,Female,PROD682,Pakistan,7/26/2021,2023-03-07 00:00:00,3,active,132.82,8,10,Sneakers,Clothing,3.8,0,Active,30
+ORD5483,CUST1483,21,Male,PROD683,UK,2022-04-12 00:00:00,12/21/2024,2,cancelled,554.08,1,47,Chair,Home,4.2,1,Cancelled subscription,50
+ORD5484,CUST1484,23,Male,PROD684,USA,2023-06-08 00:00:00,3/27/2024,1,active,190.43,5,2,Shampoo,Beauty,4.2,0,Active,30
+ORD5485,CUST1485,59,Female,PROD685,Canada,4/19/2022,5/21/2023,0,active,228.34,7,16,Tablet,Electronics,4.2,0,Active,0
+ORD5486,CUST1486,28,Male,PROD686,Germany,10/28/2021,9/29/2022,3,active,975.01,1,4,Tennis Racket,Sports,4.0,0,Active,50
+ORD5487,CUST1487,40,Male,PROD687,India,10/27/2021,6/26/2025,3,active,62.15,3,31,Conditioner,Beauty,3.5,0,Active,30
+ORD5488,CUST1488,49,Female,PROD688,Canada,11/27/2022,1/25/2024,1,active,537.56,2,11,Shirt,Clothing,4.3,0,Active,10
+ORD5489,CUST1489,46,Female,PROD689,Germany,2023-07-04 00:00:00,4/16/2025,2,active,472.65,4,11,Lamp,Home,4.1,0,Active,20
+ORD5490,CUST1490,44,Female,PROD690,Germany,6/13/2023,1/28/2024,1,cancelled,109.16,8,31,Camera,Electronics,3.9,1,Cancelled subscription,40
+ORD5491,CUST1491,50,Male,PROD691,USA,1/14/2022,12/23/2022,3,paused,261.49,5,25,Bluetooth Speaker,Electronics,3.9,1,Paused subscription,60
+ORD5492,CUST1492,49,Female,PROD692,UK,9/30/2020,3/25/2024,5,active,69.48,7,41,Cricket Bat,Sports,3.3,0,Active,50
+ORD5493,CUST1493,38,Female,PROD693,Canada,5/31/2023,7/22/2025,2,active,1481.71,1,37,Shirt,Clothing,4.0,0,Active,20
+ORD5494,CUST1494,25,Male,PROD694,Canada,1/26/2023,10/13/2023,0,cancelled,189.21,9,30,Hoodie,Clothing,4.0,1,Cancelled subscription,30
+ORD5495,CUST1495,62,Female,PROD695,India,2021-07-09 00:00:00,2021-11-12 00:00:00,3,active,271.14,4,42,Face Wash,Beauty,4.0,0,Active,30
+ORD5496,CUST1496,33,Female,PROD696,Canada,9/19/2022,2023-11-01 00:00:00,5,active,396.81,5,20,Camera,Electronics,3.9,0,Active,50
+ORD5497,CUST1497,20,Male,PROD697,UK,7/14/2021,1/30/2025,0,cancelled,836.76,2,47,Skirt,Clothing,4.3,1,Cancelled subscription,30
+ORD5498,CUST1498,29,Male,PROD698,Canada,6/15/2021,2022-06-03 00:00:00,1,active,71.96,2,7,Lipstick,Beauty,4.1,0,Active,10
