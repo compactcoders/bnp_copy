@@ -117,7 +117,7 @@ def segments_from_proba(p: np.ndarray) -> List[str]:
     for val in p:
         if val >= 0.66:
             seg.append("High")
-        elif val >= 0.33:
+        elif val >= 0.20:
             seg.append("Medium")
         else:
             seg.append("Low")

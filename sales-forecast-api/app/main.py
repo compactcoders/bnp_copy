@@ -121,70 +121,123 @@ async def forecast_sales(file: UploadFile = File(...)):
 @app.post("/upload-customers/")
 async def upload_customers(file: UploadFile = File(...)):
     try:
+        # 1️⃣ Read uploaded CSV
         contents = await file.read()
         uploaded_df = pd.read_csv(io.StringIO(contents.decode("utf-8-sig")))
+
+        # 2️⃣ Required columns for backend processing
         required_columns = [
-            "order_id", "customer_id", "age", "gender", "product_id", "country",
-            "signup_date", "last_purchase_date", "cancellations_count", "subscription_status",
-            "unit_price", "quantity", "purchase_frequency", "product_name", "category", "Ratings",
-            "is_churn", "churn_reason", "churn_risk_score"
+            "order_id", "customer_id", "product_id", "unit_price", "quantity"
         ]
-        missing = [col for col in required_columns if col not in uploaded_df.columns]
-        if missing:
-            return {"error": f"Missing required columns: {', '.join(missing)}"}
+        missing_required = [col for col in required_columns if col not in uploaded_df.columns]
+        if missing_required:
+            return {"error": f"Missing required columns: {', '.join(missing_required)}"}
 
-        # Additional validation
-        validation_errors = []
-        # Check for empty critical fields
-        critical_fields = ["customer_id", "order_id", "product_id", "signup_date", "last_purchase_date", "country"]
-        for field in critical_fields:
-            if field in uploaded_df.columns:
-                empty_count = uploaded_df[field].isnull().sum()
-                if empty_count > 0:
-                    validation_errors.append(f"{field} has {empty_count} empty values")
-
-        # Check numerical fields
-        numerical_fields = ["age", "unit_price", "quantity", "purchase_frequency", "cancellations_count", "Ratings", "churn_risk_score"]
-        for field in numerical_fields:
-            if field in uploaded_df.columns:
-                try:
-                    pd.to_numeric(uploaded_df[field], errors='coerce')
-                    nan_count = uploaded_df[field].isna().sum()
-                    if nan_count > 0:
-                        validation_errors.append(f"{field} has {nan_count} invalid numerical values")
-                except:
-                    validation_errors.append(f"{field} contains invalid data")
-
-        # Check date fields
-        date_fields = ["signup_date", "last_purchase_date"]
-        for field in date_fields:
-            if field in uploaded_df.columns:
-                try:
-                    pd.to_datetime(uploaded_df[field], errors='coerce')
-                    invalid_count = uploaded_df[field].isna().sum()
-                    if invalid_count > 0:
-                        validation_errors.append(f"{field} has {invalid_count} invalid date values")
-                except:
-                    validation_errors.append(f"{field} contains invalid date formats")
-
-        # Check categorical fields (case-insensitive)
-        categorical_checks = {
-            "gender": ["male", "female", "other"],
-            "subscription_status": ["active", "inactive", "cancelled", "paused"],
-            "is_churn": [0, 1, "0", "1"]
+        # 3️⃣ Fill optional columns with defaults if missing
+        optional_defaults = {
+            "age": 30,
+            "gender": "Other",
+            "country": "Unknown",
+            "signup_date": "",
+            "last_purchase_date": "",
+            "cancellations_count": 0,
+            "subscription_status": "Active",
+            "purchase_frequency": 1,
+            "product_name": "Unknown",
+            "category": "Misc",
+            "ratings": 3
         }
-        for field, expected in categorical_checks.items():
-            if field in uploaded_df.columns:
-                unique_vals = uploaded_df[field].dropna().unique()
-                invalid = [v for v in unique_vals if str(v).lower() not in expected]
-                if invalid:
-                    validation_errors.append(f"{field} has unexpected values: {', '.join(map(str, invalid[:5]))}")  # Show first 5
+        for col, default in optional_defaults.items():
+            if col not in uploaded_df.columns:
+                uploaded_df[col] = default
 
-        if validation_errors:
-            return {"error": "Data validation failed: " + "; ".join(validation_errors)}
+        # 4️⃣ Process & feature engineering
+        processed_data = []
+        for _, row in uploaded_df.iterrows():
+            customer = {
+                "order_id": str(row["order_id"]),
+                "customer_id": str(row["customer_id"]),
+                "age": int(row["age"]),
+                "gender": str(row["gender"]),
+                "product_id": str(row["product_id"]),
+                "country": str(row["country"]),
+                "signup_date": str(row["signup_date"]),
+                "last_purchase_date": str(row["last_purchase_date"]),
+                "cancellations_count": int(row["cancellations_count"]),
+                "subscription_status": str(row["subscription_status"]),
+                "unit_price": float(row["unit_price"]),
+                "quantity": int(row["quantity"]),
+                "purchase_frequency": int(row["purchase_frequency"]),
+                "product_name": str(row["product_name"]),
+                "category": str(row["category"]),
+                "ratings": float(row["ratings"]),
+            }
 
-        processed_data = process_customer_data(uploaded_df)
-        return {"data": processed_data}
+            # Feature engineering
+            customer["age_group"] = (
+                "Under 25" if customer["age"] < 25 else
+                "25-34" if customer["age"] < 35 else
+                "35-44" if customer["age"] < 45 else
+                "45-59" if customer["age"] < 60 else
+                "60+"
+            )
+            if customer["last_purchase_date"]:
+                last_date = pd.to_datetime(customer["last_purchase_date"], errors="coerce")
+                months_since = (pd.Timestamp.now() - last_date).days // 30 if last_date is not pd.NaT else 0
+                customer["months_since_last_purchase"] = months_since
+            else:
+                customer["months_since_last_purchase"] = 0
+
+            # Lifetime value
+            customer["lifetime_value"] = customer["unit_price"] * customer["quantity"] * customer["purchase_frequency"]
+
+            # Churn scoring
+            churn_score = 0
+            if customer["age"] < 25: churn_score += 0.1
+            if customer["age"] > 60: churn_score += 0.2
+            churn_score += customer["cancellations_count"] * 0.15
+            if customer["purchase_frequency"] < 2: churn_score += 0.2
+            if customer["subscription_status"] == "Inactive": churn_score += 0.25
+            if customer["subscription_status"] == "Cancelled": churn_score += 0.5
+            if customer["ratings"] < 3: churn_score += 0.2
+            elif customer["ratings"] < 4: churn_score += 0.1
+            churn_score = min(max(churn_score, 0), 1)
+            customer["churn_probability"] = churn_score
+            customer["churn_risk"] = (
+                "High" if churn_score > 0.7 else
+                "Medium" if churn_score > 0.4 else
+                "Low"
+            )
+
+            # Promotion eligibility
+            customer["promotion_eligible"] = (
+                customer["lifetime_value"] > 1000 and
+                customer["ratings"] >= 4 and
+                customer["subscription_status"] == "Active"
+            )
+            customer["retention_strategy"] = "Personalized retention offer"
+
+            processed_data.append(customer)
+
+        # 5️⃣ Update STORE
+        df_processed = pd.DataFrame(processed_data)
+        STORE.df_customers = df_processed.copy()
+
+        # 6️⃣ Train churn model
+        churn_scores = churn_svc.train_churn(STORE.df_customers)
+        best_model = max(churn_scores, key=lambda k: churn_scores[k])
+        print(f"Churn model trained. Best model: {best_model} with accuracy {churn_scores[best_model]}")
+
+        # 7️⃣ Generate predictions
+        records = df_processed.to_dict(orient="records")
+        predictions = churn_svc.churn_proba(df_processed)
+        segments = churn_svc.segments_from_proba(predictions)
+        for i, rec in enumerate(records):
+            rec["churn_probability"] = float(predictions[i])
+            rec["churn_segment"] = segments[i]
+
+        return {"data": records, "message": "File uploaded successfully, churn model trained, predictions generated."}
+
     except Exception as e:
         print("Error in upload_customers:", e)
         return {"error": str(e)}

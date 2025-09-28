@@ -26,53 +26,76 @@ export class DataService {
     maxRecords: 1000,
   };
 
-  static async uploadFile(
-    file: File,
-    dataType: "churn" | "sales" = "churn"
-  ): Promise<CustomerData[]> {
-    const formData = new FormData();
-    formData.append("file", file);
+static async uploadFile(
+  file: File,
+  dataType: "churn" | "sales" = "churn"
+): Promise<CustomerData[]> {
+  const formData = new FormData();
+  formData.append("file", file);
 
-    try {
-      const response = await fetch("http://localhost:8000/upload-customers/", {
-        method: "POST",
-        body: formData,
-      });
+  try {
+    const response = await fetch("http://localhost:8000/upload-customers/", {
+      method: "POST",
+      body: formData,
+    });
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || "Failed to upload file");
-      }
-
-      const result = await response.json();
-      if (result.error) {
-        throw new Error(result.error);
-      }
-      const processedData: CustomerData[] = result.data.map((row: any) => ({
-        ...row,
-        age_group: row.age_group,
-        months_since_last_purchase: row.months_since_last_purchase,
-        lifetime_value: row.lifetime_value,
-        churn_probability: row.churn_probability,
-        churn_risk: row.churn_risk,
-        promotion_eligible: row.promotion_eligible,
-        retention_strategy: row.retention_strategy,
-      }));
-
-      if (dataType === "churn") {
-        this.churnData = processedData;
-      } else {
-        this.salesData = processedData;
-      }
-
-      this.config.maxRecords = processedData.length;
-      this.config.recordsToAnalyze = Math.min(1000, processedData.length);
-      return processedData;
-    } catch (error) {
-      throw error;
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.error || "Failed to upload file");
     }
-  }
 
+    const result = await response.json();
+    if (result.error) {
+      throw new Error(result.error);
+    }
+
+    const processedData: CustomerData[] = result.data.map((row: any) => ({
+      ...row,
+      age_group: row.age_group || this.getAgeGroup(row.age),
+      months_since_last_purchase:
+        row.months_since_last_purchase ||
+        this.getMonthsSinceLastPurchase(row.last_purchase_date),
+      lifetime_value: row.lifetime_value ?? 0,
+      churn_probability: row.churn_probability,
+      churn_risk: row.churn_risk,
+      promotion_eligible: row.promotion_eligible ?? false,
+      retention_strategy: row.retention_strategy,
+      ratings: row.ratings ?? 3,
+      purchase_frequency: row.purchase_frequency ?? 1,
+      subscription_status: row.subscription_status ?? "Active",
+    }));
+
+    // Compute churn probability, risk, and retention strategy if missing
+    processedData.forEach((customer) => {
+      if (customer.churn_probability === undefined) {
+        customer.churn_probability = this.calculateChurnScore(customer);
+      }
+
+      if (!customer.churn_risk) {
+        if (customer.churn_probability < 0.33) customer.churn_risk = "Low";
+        else if (customer.churn_probability < 0.66) customer.churn_risk = "Medium";
+        else customer.churn_risk = "High";
+      }
+
+      if (!customer.retention_strategy) {
+        customer.retention_strategy = this.generateRetentionStrategy(customer);
+      }
+    });
+
+    if (dataType === "churn") {
+      this.churnData = processedData;
+    } else {
+      this.salesData = processedData;
+    }
+
+    this.config.maxRecords = processedData.length;
+    this.config.recordsToAnalyze = Math.min(1000, processedData.length);
+
+    return processedData;
+  } catch (error) {
+    throw error;
+  }
+}
 
 
   private static getAgeGroup(age: number): string {
